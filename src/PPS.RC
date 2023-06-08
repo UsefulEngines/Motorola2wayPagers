@@ -1,0 +1,1882 @@
+//Microsoft App Studio generated resource script.
+//
+#include "resource.h"
+
+#define APSTUDIO_READONLY_SYMBOLS
+/////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 2 resource.
+//
+#include "afxres.h"
+
+/////////////////////////////////////////////////////////////////////////////////////
+#undef APSTUDIO_READONLY_SYMBOLS
+
+#ifdef APSTUDIO_INVOKED
+//////////////////////////////////////////////////////////////////////////////
+//
+// TEXTINCLUDE
+//
+
+1 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "resource.h\0"
+END
+
+2 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""afxres.h""\r\n"
+    "\0"
+END
+
+3 TEXTINCLUDE DISCARDABLE 
+BEGIN
+    "#include ""res\\pps.rc2""  // non-App Studio edited resources\r\n"
+    "\r\n"
+    "#include ""afxres.rc""  \011// Standard components\r\n"
+    "#include ""afxprint.rc""\011// printing/print preview resources\r\n"
+    "\0"
+END
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // APSTUDIO_INVOKED
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Icon
+//
+
+IDR_MAINFRAME           ICON    DISCARDABLE     "RES\\PPS.ICO"
+IDI_ICON1               ICON    DISCARDABLE     "RES\\ICON1.ICO"
+IDI_ICON2               ICON    DISCARDABLE     "RES\\ICON2.ICO"
+IDI_ICON3               ICON    DISCARDABLE     "RES\\ICON3.ICO"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Bitmap
+//
+
+IDR_MAINFRAME           BITMAP  MOVEABLE PURE   "RES\\TOOLBAR.BMP"
+DNSD                    BITMAP  DISCARDABLE     "RES\\DNSD.BMP"
+DNSF                    BITMAP  DISCARDABLE     "RES\\DNSF.BMP"
+DNSU                    BITMAP  DISCARDABLE     "RES\\DNSU.BMP"
+DNSX                    BITMAP  DISCARDABLE     "RES\\DNSX.BMP"
+UPSD                    BITMAP  DISCARDABLE     "RES\\UPSD.BMP"
+UPSF                    BITMAP  DISCARDABLE     "RES\\UPSF.BMP"
+UPSU                    BITMAP  DISCARDABLE     "RES\\UPSU.BMP"
+UPSX                    BITMAP  DISCARDABLE     "RES\\UPSX.BMP"
+IDB_AMPDLOGO_BMP        BITMAP  DISCARDABLE     "RES\\AMPDLOGO.BMP"
+IDR_TUNING_TOOLS        BITMAP  MOVEABLE PURE   "RES\\IDR_TUNI.BMP"
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Menu
+//
+
+IDR_MAINFRAME MENU PRELOAD DISCARDABLE 
+BEGIN
+    POPUP "&File"
+    BEGIN
+        MENUITEM "&Open...\tCtrl+O",            ID_FILE_OPEN
+        MENUITEM "Close",                       ID_FILE_CLOSE
+        MENUITEM SEPARATOR
+        MENUITEM "&Save\tCtrl+S",               ID_FILE_SAVE
+        MENUITEM "Save &As...",                 ID_FILE_SAVE_AS
+        MENUITEM "Save As &Default",            ID_FILE_SAVEAS_DEFAULT
+        MENUITEM SEPARATOR
+        MENUITEM "&Print... \tCtrl+P",          ID_FILE_PRINT
+        MENUITEM "P&rint Setup...",             ID_FILE_PRINT_SETUP
+        MENUITEM SEPARATOR
+        MENUITEM "Recent File",                 ID_FILE_MRU_FILE1, GRAYED
+        MENUITEM SEPARATOR
+        MENUITEM "E&xit",                       ID_APP_EXIT
+    END
+    POPUP "&Device"
+    BEGIN
+        MENUITEM "&Read\tCtrl+R",               ID_PAGER_READ
+        MENUITEM "&Write\tCtrl+W",              ID_PAGER_WRITE
+        MENUITEM SEPARATOR
+        MENUITEM "&Access Password\t",          ID_PAGER_PASSWD
+        MENUITEM SEPARATOR
+        MENUITEM "Serial &Port Settings",       ID_DEVICE_COMSETTINGS
+        MENUITEM SEPARATOR
+        MENUITEM "&Transceiver Tuning",         ID_DEVICE_TUNING
+        MENUITEM SEPARATOR
+        MENUITEM "&Soft Reset",                 ID_PAGER_SW_RESET
+        MENUITEM "&Hard Reset",                 ID_PAGER_HW_RESET
+    END
+    POPUP "&View"
+    BEGIN
+        MENUITEM "&Next\tCtrl + --->",          ID_VIEW_NEXT
+        MENUITEM "&Previous\tCtrl + <---",      ID_VIEW_PREVIOUS
+        MENUITEM SEPARATOR
+        MENUITEM "Logo",                        ID_VIEW_BANNER
+    END
+    POPUP "U&tility"
+    BEGIN
+        MENUITEM "Import &Patch",               ID_UTILITY_OVERLAY
+        MENUITEM "Import &Defaults\tCtrl+D",    ID_UTILITY_ALLDEFAULT
+        MENUITEM "Import &Archived\tCtrl+A",    ID_UTILITY_SETALLARCHIVE
+        MENUITEM SEPARATOR
+        POPUP "Record &Modifications"
+        BEGIN
+            MENUITEM "&On/Off",                     ID_UTILITY_DELTA_ONOFF
+            MENUITEM "E&rase",                      ID_UTILITY_DELTA_ERASE
+            MENUITEM "&Play\tCtrl+M",               ID_UTILITY_DELTA_PLAY
+        END
+    END
+    POPUP "\a&Help"
+    BEGIN
+        MENUITEM "&Index",                      ID_HELP_INDEX
+        MENUITEM "&Using Help",                 ID_HELP_USING
+        MENUITEM SEPARATOR
+        MENUITEM "&About...",                   ID_APP_ABOUT
+    END
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Accelerator
+//
+
+IDR_MAINFRAME ACCELERATORS PRELOAD MOVEABLE PURE 
+BEGIN
+    "A",            ID_UTILITY_SETALLARCHIVE,VIRTKEY,CONTROL, NOINVERT
+    "D",            ID_SETALL_DEFAULT,      VIRTKEY,CONTROL, NOINVERT
+    "M",            ID_UTILITY_DELTA_PLAY,  VIRTKEY,CONTROL, NOINVERT
+    "N",            ID_UTILITY_DELTA_REPEAT,VIRTKEY,CONTROL, NOINVERT
+    "O",            ID_FILE_OPEN,           VIRTKEY,CONTROL, NOINVERT
+    "P",            ID_FILE_PRINT,          VIRTKEY,CONTROL, NOINVERT
+    "R",            ID_PAGER_READ,          VIRTKEY,CONTROL, NOINVERT
+    "S",            ID_FILE_SAVE,           VIRTKEY,CONTROL, NOINVERT
+    VK_F1,          ID_HELP,                VIRTKEY,NOINVERT
+    VK_F10,         ID_TOGGLE_RESETS,       VIRTKEY,CONTROL, ALT, NOINVERT
+    VK_F5,          ID_KEY_USER,            VIRTKEY,CONTROL, NOINVERT
+    VK_F5,          ID_KEY_OWNER,           VIRTKEY,CONTROL, ALT, NOINVERT
+    VK_F5,          ID_KEY_FORGET,          VIRTKEY,SHIFT, CONTROL, ALT, 
+                                                    NOINVERT
+    VK_HOME,        ID_VIEW_HEXEDIT,        VIRTKEY,CONTROL, ALT, NOINVERT
+    VK_INSERT,      ID_VIEW_COMMVIEW,       VIRTKEY,CONTROL, ALT, NOINVERT
+    VK_LBUTTON,     ID_UTILITY_DELTA_PLAY,  VIRTKEY,CONTROL, NOINVERT
+    VK_LEFT,        ID_VIEW_PREVIOUS,       VIRTKEY,CONTROL, NOINVERT
+    VK_RIGHT,       ID_VIEW_NEXT,           VIRTKEY,CONTROL, NOINVERT
+    "W",            ID_PAGER_WRITE,         VIRTKEY,CONTROL, NOINVERT
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog
+//
+
+IDD_ABOUTBOX DIALOG DISCARDABLE  34, 22, 218, 69
+STYLE DS_MODALFRAME | WS_POPUP | WS_CAPTION | WS_SYSMENU
+CAPTION "About PPS"
+FONT 8, "MS Sans Serif"
+BEGIN
+    ICON            IDI_ICON3,IDC_STATIC,8,4,18,20
+    LTEXT           "PPS,  CENTAUR_FRp02.04; Dec. 9, 1997",IDC_STATIC,32,4,
+                    137,8
+    LTEXT           "Copyright \251 1996, 1997, Motorola",IDC_STATIC,32,16,
+                    111,8
+    DEFPUSHBUTTON   "OK",IDOK,181,9,32,14,WS_GROUP
+    LTEXT           "Supports all PageFinder product releases",IDC_STATIC,41,
+                    37,135,8
+    LTEXT           "issued prior to the above release date.",IDC_STATIC,41,
+                    48,134,8
+    GROUPBOX        "",IDC_STATIC,33,29,152,32
+END
+
+IDD_PPS_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_PROTOCOL_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "F&0 ",IDC_DISABLE_F0,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP,28,33,22,10
+    CONTROL         "F&1",IDC_DISABLE_F1,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,28,50,22,10
+    CONTROL         "F&2",IDC_DISABLE_F2,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,28,67,22,10
+    CONTROL         "F&3",IDC_DISABLE_F3,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,28,84,22,10
+    CONTROL         "F&4",IDC_DISABLE_F4,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,28,101,22,10
+    CONTROL         "F&5",IDC_DISABLE_F5,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,28,118,22,10
+    CONTROL         "F&6",IDC_DISABLE_F6,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,28,135,22,10
+    CONTROL         "F&7",IDC_DISABLE_F7,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,28,153,22,10
+    EDITTEXT        IDC_SCAN_F0,56,32,57,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCAN_F1,56,48,57,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCAN_F2,56,66,57,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCAN_F3,56,83,57,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCAN_F4,56,101,57,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCAN_F5,56,117,57,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCAN_F6,56,133,57,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_SCAN_F7,56,151,57,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F0,132,32,24,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F1,132,48,24,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F2,132,66,24,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F3,132,83,24,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F4,132,101,24,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F5,132,117,24,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F6,132,133,24,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F7,132,151,24,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "d&isable",IDC_SVC_PROV_DISABLE1,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT,206,38,34,10
+    CONTROL         "di&sable",IDC_SVC_PROV_DISABLE2,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT,206,52,34,10
+    CONTROL         "dis&able",IDC_SVC_PROV_DISABLE3,"Button",
+                    BS_AUTOCHECKBOX | BS_LEFTTEXT,206,66,34,10
+    EDITTEXT        IDC_SVC_PROV_ID0,245,23,31,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_SVC_PROV_ID1,245,37,31,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_SVC_PROV_ID2,245,51,31,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_SVC_PROV_ID3,245,65,31,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOME_INDEX,236,109,59,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_REGFAILRESTTIME_EDIT,277,130,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ASYNCSLEEPTIME_EDIT,277,148,18,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "D&efaults",IDC_PRO_DEFAULTS_BTN,96,180,58,14
+    PUSHBUTTON      "&Undo",IDC_PRO_UNDO_BTN,167,180,58,14
+    CONTROL         "UPS",IDC_CHNUM_UP_F0,"Button",BS_OWNERDRAW | WS_GROUP,
+                    113,32,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F0,"Button",BS_OWNERDRAW,113,38,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F0,"Button",BS_OWNERDRAW | WS_GROUP,
+                    156,32,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F0,"Button",BS_OWNERDRAW,156,38,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F1,"Button",BS_OWNERDRAW | WS_GROUP,
+                    113,48,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F1,"Button",BS_OWNERDRAW,113,54,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F1,"Button",BS_OWNERDRAW | WS_GROUP,
+                    156,48,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F1,"Button",BS_OWNERDRAW,156,54,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F2,"Button",BS_OWNERDRAW | WS_GROUP,
+                    113,66,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F2,"Button",BS_OWNERDRAW,113,72,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F2,"Button",BS_OWNERDRAW | WS_GROUP,
+                    156,66,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F2,"Button",BS_OWNERDRAW,156,72,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F3,"Button",BS_OWNERDRAW | WS_GROUP,
+                    113,83,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F3,"Button",BS_OWNERDRAW,113,89,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F3,"Button",BS_OWNERDRAW | WS_GROUP,
+                    156,83,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F3,"Button",BS_OWNERDRAW,156,89,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F4,"Button",BS_OWNERDRAW | WS_GROUP,
+                    113,101,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F4,"Button",BS_OWNERDRAW,113,107,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F4,"Button",BS_OWNERDRAW | WS_GROUP,
+                    156,101,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F4,"Button",BS_OWNERDRAW,156,107,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F5,"Button",BS_OWNERDRAW | WS_GROUP,
+                    113,117,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F5,"Button",BS_OWNERDRAW,113,123,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F5,"Button",BS_OWNERDRAW | WS_GROUP,
+                    156,117,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F5,"Button",BS_OWNERDRAW,156,123,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F6,"Button",BS_OWNERDRAW | WS_GROUP,
+                    113,133,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F6,"Button",BS_OWNERDRAW,113,139,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F6,"Button",BS_OWNERDRAW | WS_GROUP,
+                    156,133,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F6,"Button",BS_OWNERDRAW,156,139,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F7,"Button",BS_OWNERDRAW | WS_GROUP,
+                    113,151,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F7,"Button",BS_OWNERDRAW,113,157,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F7,"Button",BS_OWNERDRAW | WS_GROUP,
+                    156,151,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F7,"Button",BS_OWNERDRAW,156,157,15,6
+    LTEXT           "Scan Time",IDC_STATIC,132,20,36,8
+    LTEXT           "Scan Frequency",IDC_STATIC,57,20,54,8
+    LTEXT           "disable",IDC_STATIC,28,20,26,8
+    GROUPBOX        " Control Channel Scan Frequencies (MHz) ",IDC_STATIC,22,
+                    8,154,164
+    GROUPBOX        "",IDC_STATIC,185,95,115,77
+    GROUPBOX        " Service Providers ",IDC_STATIC,185,8,115,80
+    LTEXT           "primary",IDC_STATIC,208,25,30,9
+    LTEXT           "Home Index",IDC_STATIC,189,112,40,8
+    LTEXT           "Partial Coverage",IDC_PCRT1_STATIC,189,128,55,8
+    LTEXT           "Registration Rest Timer",IDC_PCRT2_STATIC,189,135,78,8
+    LTEXT           "Asynchronous Sleep Cycle",IDC_STATIC,189,151,87,8
+END
+
+IDD_PASSWORD_DLG DIALOG DISCARDABLE  0, 0, 185, 86
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "OK",IDC_OK,128,28,50,14
+    PUSHBUTTON      "Cancel",IDCANCEL,128,44,50,14
+    EDITTEXT        IDC_EDIT1,8,28,94,15,ES_UPPERCASE | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_EDIT2,8,44,94,15,ES_UPPERCASE | ES_PASSWORD | 
+                    ES_AUTOHSCROLL
+    LTEXT           "Enter the password twice for verification. ",IDC_STATIC,
+                    24,8,136,8
+    EDITTEXT        IDC_CURPWD_EDIT,7,68,172,12,ES_AUTOHSCROLL | ES_READONLY | 
+                    WS_DISABLED | NOT WS_BORDER | NOT WS_TABSTOP
+END
+
+IDD_ADDRESSINFO_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SVC_ADDR_EDIT0,78,46,41,14,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "&Sub-Addresses",IDC_SUBADDR_BTN0,124,46,54,14,NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_SVC_ADDR_EDIT1,78,62,41,14,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "S&ub-Addresses",IDC_SUBADDR_BTN1,124,62,54,14,NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_SVC_ADDR_EDIT2,78,78,41,14,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Su&b-Addresses",IDC_SUBADDR_BTN2,124,78,54,14,NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_SVC_ADDR_EDIT3,78,94,41,14,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Sub-&Addresses",IDC_SUBADDR_BTN3,124,94,54,14,NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_SVC_ADDR_EDIT4,78,110,41,14,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Sub-A&ddresses",IDC_SUBADDR_BTN4,124,110,54,14,NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_SVC_ADDR_EDIT5,78,126,41,14,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "Sub-Add&resses",IDC_SUBADDR_BTN5,124,126,54,14,NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_PER_ADDR1_EDIT,206,41,54,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_PER_ADDR2_EDIT,206,56,54,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_ESN_EDIT,121,165,54,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "D&efaults",IDC_ADDR_DEFAULTS_BTN,204,99,62,14
+    PUSHBUTTON      "U&ndo",IDC_ADDR_UNDO_BTN,204,119,62,14
+    GROUPBOX        " Personal Addresses ",IDC_STATIC,193,27,81,50
+    GROUPBOX        " Information Service Addresses ",IDC_STATIC,48,27,139,
+                    123
+    GROUPBOX        "",IDC_R50ESN_STATIC,48,153,139,32
+    CONTROL         "&0",IDC_ISVC_DISABLE_CHK0,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,56,49,16,10
+    CONTROL         "&1",IDC_ISVC_DISABLE_CHK1,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,56,65,16,10
+    CONTROL         "&2",IDC_ISVC_DISABLE_CHK2,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,56,81,16,10
+    CONTROL         "&3",IDC_ISVC_DISABLE_CHK3,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,56,97,16,10
+    CONTROL         "&4",IDC_ISVC_DISABLE_CHK4,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,56,113,16,10
+    CONTROL         "&5",IDC_ISVC_DISABLE_CHK5,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,56,129,16,10
+    CONTROL         "disable",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,52,39,
+                    24,8
+    LTEXT           "Reverse Channel",IDC_ESNTXT1_STATIC,59,162,57,8
+    LTEXT           "Address (ESN):",IDC_ESNTXT2_STATIC,59,171,51,8
+END
+
+IDD_SUBADDR_DLG DIALOG DISCARDABLE  0, 0, 285, 139
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "Sub-0",IDC_SUB0,"Button",BS_AUTOCHECKBOX | WS_GROUP | 
+                    WS_TABSTOP,24,24,34,10
+    CONTROL         "Sub-1",IDC_SUB1,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    24,36,34,10
+    CONTROL         "Sub-2",IDC_SUB2,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    24,48,34,10
+    CONTROL         "Sub-3",IDC_SUB3,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    24,60,34,10
+    CONTROL         "Sub-4",IDC_SUB4,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    24,72,34,10
+    CONTROL         "Sub-5",IDC_SUB5,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    24,84,34,10
+    CONTROL         "Sub-6",IDC_SUB6,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    24,96,34,10
+    CONTROL         "Sub-7",IDC_SUB7,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    24,108,34,10
+    CONTROL         "Sub-8",IDC_SUB8,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    68,24,34,10
+    CONTROL         "Sub-9",IDC_SUB9,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    68,36,34,10
+    CONTROL         "Sub-10",IDC_SUB10,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    68,48,34,10
+    CONTROL         "Sub-11",IDC_SUB11,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    68,60,34,10
+    CONTROL         "Sub-12",IDC_SUB12,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    68,72,34,10
+    CONTROL         "Sub-13",IDC_SUB13,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    68,84,34,10
+    CONTROL         "Sub-14",IDC_SUB14,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    68,96,34,10
+    CONTROL         "Sub-15",IDC_SUB15,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    68,108,34,10
+    CONTROL         "Sub-16",IDC_SUB16,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    112,24,34,10
+    CONTROL         "Sub-17",IDC_SUB17,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    112,36,34,10
+    CONTROL         "Sub-18",IDC_SUB18,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    112,48,34,10
+    CONTROL         "Sub-19",IDC_SUB19,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    112,60,34,10
+    CONTROL         "Sub-20",IDC_SUB20,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    112,72,34,10
+    CONTROL         "Sub-21",IDC_SUB21,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    112,84,34,10
+    CONTROL         "Sub-22",IDC_SUB22,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    112,96,34,10
+    CONTROL         "Sub-23",IDC_SUB23,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    112,108,34,10
+    CONTROL         "Sub-24",IDC_SUB24,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    156,24,34,10
+    CONTROL         "Sub-25",IDC_SUB25,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    156,36,34,10
+    CONTROL         "Sub-26",IDC_SUB26,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    156,48,34,10
+    CONTROL         "Sub-27",IDC_SUB27,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    156,60,34,10
+    CONTROL         "Sub-28",IDC_SUB28,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    156,72,34,10
+    CONTROL         "Sub-29",IDC_SUB29,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    156,84,34,10
+    CONTROL         "Sub-30",IDC_SUB30,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    156,96,34,10
+    CONTROL         "Sub-31",IDC_SUB31,"Button",BS_AUTOCHECKBOX | WS_TABSTOP,
+                    156,108,34,10
+    PUSHBUTTON      "&Enable All",IDC_ENABLE_BTN,216,12,64,14
+    PUSHBUTTON      "D&isable All",IDC_DISABLE_BTN,216,28,64,14
+    PUSHBUTTON      "&Accept Changes",IDC_OK_SUBADDR_DLG,216,96,64,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,216,113,64,14
+    GROUPBOX        " Enable/Disable Info-Service Sub-Addresses ",IDC_STATIC,
+                    12,8,192,120
+END
+
+IDD_PAGERID_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_SN_EDIT,80,39,72,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ICN_EDIT,80,55,72,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_PU_PROMPT_EDIT,80,71,72,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "D&efaults",IDC_DEFAULTS_BTN,193,123,80,14
+    PUSHBUTTON      "&Undo",IDC_UNDO_BTN,193,140,80,14
+    EDITTEXT        IDC_IDBLK_INFO_EDIT,173,48,129,59,ES_MULTILINE | 
+                    ES_READONLY | NOT WS_BORDER | WS_VSCROLL | NOT 
+                    WS_TABSTOP
+    CONTROL         "Serial Number",IDC_SN_STATIC,"Static",SS_SIMPLE,16,41,
+                    47,8
+    CONTROL         "Inventory Control ",IDC_STATIC,"Static",SS_SIMPLE,16,57,
+                    59,8
+    CONTROL         "CodePlug ID",IDC_STATIC,"Static",SS_SIMPLE,16,103,46,8
+    CONTROL         "Power-Up Prompt",IDC_STATIC,"Static",SS_SIMPLE,16,73,58,
+                    8
+    LTEXT           "CodePlug Version",IDC_STATIC,16,88,59,8
+    EDITTEXT        IDC_OTA_REV_EDIT,80,103,72,12,ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP
+    EDITTEXT        IDC_CP_VER_EDIT,80,88,72,12,ES_UPPERCASE | ES_READONLY | 
+                    NOT WS_BORDER | NOT WS_TABSTOP
+    GROUPBOX        " Info Block Contents ",IDC_STATIC,165,36,141,75
+    LTEXT           "Capcode",IDC_CAPCODE_STATIC,16,151,30,8
+    EDITTEXT        IDC_CAPCODE_EDIT,80,151,72,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    CONTROL         "Host Patch Level",IDC_STATIC,"Static",SS_SIMPLE,16,119,
+                    58,8
+    EDITTEXT        IDC_HOST_PATCH_EDIT,80,119,72,12,ES_UPPERCASE | 
+                    ES_READONLY | NOT WS_BORDER | NOT WS_TABSTOP
+    CONTROL         "DSP Patch Level",IDC_STATIC,"Static",SS_SIMPLE,16,135,
+                    57,8
+    EDITTEXT        IDC_DSP_PATCH_EDIT,80,135,72,12,ES_READONLY | NOT 
+                    WS_BORDER | NOT WS_TABSTOP
+END
+
+IDD_SECURITY_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    GROUPBOX        " Over-The-Air Access ",IDC_STATIC,91,22,140,68
+    GROUPBOX        " &Serial Port Access ",IDC_STATIC,91,99,140,52
+    PUSHBUTTON      "D&efaults",IDC_SEC_DEFAULTS_BTN,141,180,40,14,NOT 
+                    WS_VISIBLE
+    PUSHBUTTON      "&Undo",IDC_SEC_UNDO_BTN,142,162,40,14
+    CONTROL         "Disable OTA &Access",IDC_OTA_CHECK,"Button",
+                    BS_AUTOCHECKBOX,99,35,78,10
+    CONTROL         "Password &Required",IDC_SERIAL_CHECK,"Button",
+                    BS_AUTOCHECKBOX,99,115,74,10
+    PUSHBUTTON      "&Change OTA Access Password",IDC_CHG_OTA_PWD_BTN,99,49,
+                    122,14
+    PUSHBUTTON      "Change Relea&se Features Password",
+                    IDC_CHG_OTAREL_PWD_BTN,99,68,122,14
+    PUSHBUTTON      "Change Ser&ial Access Password",IDC_CHG_SER_PWD_BTN,99,
+                    129,122,14
+END
+
+IDD_MESSAGES_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_FMT_DELIM_CHAR,182,111,10,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELIMIT_POS_FOUR,214,124,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELIMIT_POS_THREE,233,124,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELIMIT_POS_TWO,252,124,16,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELIMIT_POS_ONE,271,124,16,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "D&efaults",IDC_MSGS_DEFAULTS_BTN,100,155,58,14
+    PUSHBUTTON      "&Undo",IDC_MSGS_UNDO_BTN,164,155,58,14
+    CONTROL         "Perform duplic&ation check on personal messages.",
+                    IDC_DUP_MSG_CHECK,"Button",BS_AUTOCHECKBOX,32,42,172,10
+    CONTROL         "Retain errored one-way a&lpha-numeric messages.",
+                    IDC_RET_ERR_1_ALPHNUM,"Button",BS_AUTOCHECKBOX,32,67,170,
+                    10
+    CONTROL         "Retain errored one-way &numeric-only messages.",
+                    IDC_RET_ERR_1_NUM,"Button",BS_AUTOCHECKBOX,32,78,166,10
+    CONTROL         "Retain errored one-way tran&sparent messages.",
+                    IDC_RET_ERR_1_XPARENT,"Button",BS_AUTOCHECKBOX,32,89,162,
+                    10
+    CONTROL         "Retain errored t&wo-way messages.",IDC_RET_ERR_2_MSGS,
+                    "Button",BS_AUTOCHECKBOX,32,100,122,10
+    GROUPBOX        " Message Processing Options ",IDC_STATIC,25,29,272,118
+    LTEXT           "Numeric message format delimiting character:",
+                    IDC_STATIC,32,114,148,8
+    LTEXT           "Numeric message format delimiting character positions:",
+                    IDC_STATIC,32,126,179,8
+    LTEXT           "Regard duplicate messages as new messages after ",
+                    IDC_STATIC,41,55,169,8
+    EDITTEXT        IDC_MSGUPDATETIMEOUT_EDIT,210,52,19,12,ES_AUTOHSCROLL
+    LTEXT           "hours.",IDC_STATIC,233,55,22,8
+END
+
+IDD_BOILERPLATE_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "&Defaults",IDC_BOILER_DEFAULTS_BTN,213,120,84,14
+    PUSHBUTTON      "&Undo",IDC_BOILER_UNDO_BTN,213,136,84,14
+    LTEXT           "ToDO:  Add view specific controls here",IDC_STATIC,21,
+                    93,129,8
+    LTEXT           "Use this form as a boiler-plate for new views. ",
+                    IDC_STATIC,21,49,150,8
+    LTEXT           "Copy and Paste this resource to the new resource form and modify the new resource IDs.",
+                    IDC_STATIC,21,71,276,8
+END
+
+IDD_ALERTS_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "UPS",IDC_STDFREQ_UP_BTN,"Button",BS_OWNERDRAW | 
+                    WS_GROUP | WS_TABSTOP,127,91,17,6
+    CONTROL         "DNS",IDC_STDFREQ_DWN_BTN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,127,97,17,6
+    CONTROL         "UPS",IDC_REPEAT_UP_BTN,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,127,107,17,6
+    CONTROL         "DNS",IDC_REPEAT_DWN_BTN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,127,113,17,6
+    CONTROL         "UPS",IDC_UNREAD_UP_BTN,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,127,123,17,6
+    CONTROL         "DNS",IDC_UNREAD_DWN_BTN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,127,129,17,6
+    CONTROL         "UPS",IDC_TIMEOUT_UP_BTN,"Button",BS_OWNERDRAW | 
+                    WS_GROUP | WS_TABSTOP,127,139,17,6
+    CONTROL         "DNS",IDC_TIMEOUT_DWN_BTN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,127,145,17,6
+    PUSHBUTTON      "Pleasing Alert #&7",IDC_PROG_ALERT_BTN,49,159,61,14
+    EDITTEXT        IDC_OORPROMPT_EDIT,223,41,84,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_1WAYPROMPT_EDIT,223,53,84,11,ES_AUTOHSCROLL
+    EDITTEXT        IDC_2WAYPROMPT_EDIT,223,65,84,11,ES_AUTOHSCROLL
+    CONTROL         "UPS",IDC_INACTIVITY_UP_BTN,"Button",BS_OWNERDRAW | 
+                    WS_GROUP | WS_TABSTOP,283,101,17,6
+    CONTROL         "DNS",IDC_INACTIVITY_DWN_BTN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,283,107,17,6
+    CONTROL         "UPS",IDC_SCROLLRATE_UP_BTN,"Button",BS_OWNERDRAW | 
+                    WS_GROUP | WS_TABSTOP,283,117,17,6
+    CONTROL         "DNS",IDC_SCROLLRATE_DWN_BTN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,283,123,17,6
+    PUSHBUTTON      "D&efaults",IDC_ALERTS_DEFAULTS_BTN,169,150,61,14
+    PUSHBUTTON      "&Undo",IDC_ALERTS_UNDO_BTN,241,150,61,14
+    EDITTEXT        IDC_STD_FREQ_EDIT,96,91,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_REPEAT_EDIT,96,107,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_UNREADMSG_INT_EDIT,96,123,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_ALERT_TIMEOUT_EDIT,96,139,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_INACTIVITY_EDIT,253,101,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    EDITTEXT        IDC_SCROLLRATE_EDIT,253,117,31,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Alert Duration (sec)",IDC_STATIC,16,110,64,8
+    CONTROL         "Audib&le",IDC_EN_AUDIBLE_CHECK,"Button",BS_AUTOCHECKBOX,
+                    16,33,36,10
+    CONTROL         "&All Alerts",IDC_EN_ALL_CHECK,"Button",BS_AUTOCHECKBOX,
+                    16,45,40,10
+    CONTROL         "&Out-of-&Range (OOR) Icon",IDC_OOR_CHECK,"Button",
+                    BS_AUTOCHECKBOX,164,30,94,10
+    CONTROL         "&Memory Full ",IDC_MSG_MEM_FULL_CHK,"Button",
+                    BS_AUTOCHECKBOX,16,57,52,10
+    CONTROL         "Vi&brator",IDC_VIBRATOR_CHK,"Button",BS_AUTOCHECKBOX,76,
+                    33,37,10
+    CONTROL         "Low &Cell",IDC_LOW_CELL_CHK,"Button",BS_AUTOCHECKBOX,76,
+                    45,39,10
+    GROUPBOX        " Enable Alerts ",IDC_STATIC,9,19,140,54
+    LTEXT           "Reminder Alert Interval",IDC_STATIC,16,126,76,8
+    GROUPBOX        " Standard Alerts ",IDC_STATIC,9,79,140,100
+    LTEXT           "Reminder Alert Timeout",IDC_STATIC,16,142,77,8
+    LTEXT           "Inactivity Timeout (sec)",IDC_STATIC,171,103,78,8
+    LTEXT           "Scroll Rate (sec)",IDC_STATIC,171,119,56,8
+    GROUPBOX        " Display Behavior ",IDC_STATIC,157,89,156,47
+    LTEXT           "Alert Frequency (Hz)",IDC_STATIC,16,94,68,8
+    CONTROL         "Me&ssage Update",IDC_SILENTUPDATE_CHK,"Button",
+                    BS_AUTOCHECKBOX,76,57,66,10
+    CONTROL         "&OOR Prompt",IDC_OORPROMPT_CHECK,"Button",
+                    BS_AUTOCHECKBOX,164,42,52,10
+    CONTROL         "&1-Way Prompt",IDC_1WAYPROMPT_CHECK,"Button",
+                    BS_AUTOCHECKBOX,164,54,57,10
+    CONTROL         "&2-Way Prompt",IDC_2WAYPROMPT_CHECK,"Button",
+                    BS_AUTOCHECKBOX,164,66,57,10
+    GROUPBOX        " Enable Display ",IDC_STATIC,157,19,156,64
+END
+
+IDD_OPTIONS_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "UPS",IDC_MSGREAD_UP_BTN,"Button",BS_OWNERDRAW | 
+                    WS_GROUP | WS_TABSTOP,249,45,17,6
+    CONTROL         "DNS",IDC_MSGREAD_DWN_BTN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,249,51,17,6
+    CONTROL         "UPS",IDC_ACKMSGPCTG_UP_BTN,"Button",BS_OWNERDRAW | 
+                    WS_GROUP | WS_TABSTOP,249,61,17,6
+    CONTROL         "DNS",IDC_ACKMSGPCTG_DWN_BTN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,249,67,17,6
+    PUSHBUTTON      "D&efaults",IDC_OPTIONS_DEFAULTS_BTN,100,152,58,14
+    PUSHBUTTON      "&Undo",IDC_OPTIONS_UNDO_BTN,172,152,58,14
+    GROUPBOX        " Ack-Only ",IDC_STATIC,53,34,217,49
+    EDITTEXT        IDC_MSG_READ_RESPONSE,206,45,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Message Read Response Mode:",IDC_STATIC,60,48,106,8
+    CONTROL         "Enable I&nternational Date Format (d-m-y)",
+                    IDC_INTNATNL_DATE_CHK,"Button",BS_AUTOCHECKBOX,60,104,
+                    142,10
+    GROUPBOX        " Miscellaneous ",IDC_STATIC,53,88,217,55
+    LTEXT           "Acceptable Message Error-Content Percentage:",
+                    IDC_MSG_ERR_STATIC,60,63,156,8
+    EDITTEXT        IDC_ACKMSGPCTG_EDIT,217,61,32,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "Di&splay Time of Message Receipt",IDC_TIMESTAMP_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,115,120,10
+    CONTROL         "Enable 'Power-On' &RAM Check",IDC_POWERONRAM_CHECK,
+                    "Button",BS_AUTOCHECKBOX,60,126,112,10
+END
+
+IDD_PROTOCOL50_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_REVCHAN0_EDIT,61,40,46,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_REVCHAN1_EDIT,61,56,46,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_REVCHAN2_EDIT,61,72,46,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_REVCHAN3_EDIT,61,88,46,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_REVCHAN4_EDIT,61,104,46,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_REVCHAN5_EDIT,61,120,46,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_REVCHAN6_EDIT,61,136,46,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_INFOFRAME_EDIT,210,38,20,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_INFOCOLLAPSE_EDIT,248,38,28,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_PERSFRAME_EDIT,210,54,20,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_PERSCOLLAPSE_EDIT,248,54,28,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOMECTRLCHAN_EDIT,241,106,37,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_FWDCHAN_EDIT,226,122,52,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_ASYNCSLEEP_EDIT,226,138,52,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "D&efaults",IDC_PROTO50_DEFAULTS_BTN,97,168,58,14
+    PUSHBUTTON      "&Undo",IDC_PROTO50_UNDO_BTN,165,168,58,14
+    CONTROL         "UPS",IDC_REVCH0_UP,"Button",BS_OWNERDRAW | WS_GROUP,107,
+                    40,15,6
+    CONTROL         "DNS",IDC_REVCH0_DN,"Button",BS_OWNERDRAW,107,46,15,6
+    CONTROL         "UPS",IDC_REVCH1_UP,"Button",BS_OWNERDRAW | WS_GROUP,107,
+                    56,15,6
+    CONTROL         "DNS",IDC_REVCH1_DN,"Button",BS_OWNERDRAW,107,62,15,6
+    CONTROL         "UPS",IDC_REVCH2_UP,"Button",BS_OWNERDRAW | WS_GROUP,107,
+                    72,15,6
+    CONTROL         "DNS",IDC_REVCH2_DN,"Button",BS_OWNERDRAW,107,78,15,6
+    CONTROL         "UPS",IDC_REVCH3_UP,"Button",BS_OWNERDRAW | WS_GROUP,107,
+                    88,15,6
+    CONTROL         "DNS",IDC_REVCH3_DN,"Button",BS_OWNERDRAW,107,94,15,6
+    CONTROL         "UPS",IDC_REVCH4_UP,"Button",BS_OWNERDRAW | WS_GROUP,107,
+                    104,15,6
+    CONTROL         "DNS",IDC_REVCH4_DN,"Button",BS_OWNERDRAW,107,110,15,6
+    CONTROL         "UPS",IDC_REVCH5_UP,"Button",BS_OWNERDRAW | WS_GROUP,107,
+                    120,15,6
+    CONTROL         "DNS",IDC_REVCH5_DN,"Button",BS_OWNERDRAW,107,126,15,6
+    CONTROL         "UPS",IDC_REVCH6_UP,"Button",BS_OWNERDRAW | WS_GROUP,107,
+                    136,15,6
+    CONTROL         "DNS",IDC_REVCH6_DN,"Button",BS_OWNERDRAW,107,142,15,6
+    CONTROL         "UPS",IDC_HOMECTRL_UP,"Button",BS_OWNERDRAW | WS_GROUP,
+                    278,106,15,6
+    CONTROL         "DNS",IDC_HOMECTRL_DN,"Button",BS_OWNERDRAW,278,112,15,6
+    CONTROL         "UPS",IDC_FWDCH_UP,"Button",BS_OWNERDRAW | WS_GROUP,278,
+                    122,15,6
+    CONTROL         "DNS",IDC_FWDCH_DN,"Button",BS_OWNERDRAW,278,128,15,6
+    CONTROL         "UPS",IDC_ASYNCSLEEP_UP,"Button",BS_OWNERDRAW | WS_GROUP,
+                    278,138,15,6
+    CONTROL         "DNS",IDC_ASYNCSLEEP_DN,"Button",BS_OWNERDRAW,278,144,15,
+                    6
+    CONTROL         "UPS",IDC_INFOSVCFRAME_UP,"Button",BS_OWNERDRAW | 
+                    WS_GROUP,230,38,15,6
+    CONTROL         "DNS",IDC_INFOSVCFRAME_DN,"Button",BS_OWNERDRAW,230,44,
+                    15,6
+    CONTROL         "UPS",IDC_PERSFRAME_UP,"Button",BS_OWNERDRAW | WS_GROUP,
+                    230,54,15,6
+    CONTROL         "DNS",IDC_PERSFRAME_DN,"Button",BS_OWNERDRAW,230,60,15,6
+    CONTROL         "UPS",IDC_INFOSVCCOLLAPSE_UP,"Button",BS_OWNERDRAW | 
+                    WS_GROUP,276,38,15,6
+    CONTROL         "DNS",IDC_INFOSVCCOLLAPSE_DN,"Button",BS_OWNERDRAW,276,
+                    44,15,6
+    CONTROL         "UPS",IDC_PERSCOLLAPSE_UP,"Button",BS_OWNERDRAW | 
+                    WS_GROUP,276,54,15,6
+    CONTROL         "DNS",IDC_PERSCOLLAPSE_DN,"Button",BS_OWNERDRAW,276,60,
+                    15,6
+    LTEXT           "Home Control Channel Number",IDC_HOMECTRL_STATIC,140,
+                    108,100,8
+    GROUPBOX        " Base-Frame Management ",IDC_STATIC,134,19,163,56
+    LTEXT           "Frame",IDC_STATIC,210,30,21,8
+    LTEXT           "Collapse",IDC_STATIC,248,30,29,8
+    LTEXT           "Information Services",IDC_STATIC,141,40,68,8
+    LTEXT           "Personal Addresses",IDC_STATIC,141,56,65,8
+    GROUPBOX        " Forward Channel ",IDC_STATIC,134,81,163,75
+    LTEXT           "Frequency (MHz)",IDC_FWDCHAN_STATIC,140,124,56,8
+    GROUPBOX        " Reverse Channel ",IDC_STATIC,25,19,102,137
+    LTEXT           "Sleep Duty Cycle",IDC_STATIC,140,141,57,8
+    CONTROL         "F&0",IDC_DISABLE_REVCH0,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,36,43,20,10
+    CONTROL         "F&1",IDC_DISABLE_REVCH1,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,36,59,20,10
+    CONTROL         "F&2",IDC_DISABLE_REVCH2,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,36,75,20,10
+    CONTROL         "F&3",IDC_DISABLE_REVCH3,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,36,91,20,10
+    CONTROL         "F&4",IDC_DISABLE_REVCH4,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,36,107,20,10
+    CONTROL         "F&5",IDC_DISABLE_REVCH5,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,36,123,20,10
+    CONTROL         "F&6",IDC_DISABLE_REVCH6,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,36,139,20,10
+    CONTROL         "disable",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,34,29,
+                    24,8
+    CONTROL         "Use the received &Logical Channel Number. ",
+                    IDC_CHANNEL_ID_CHK,"Button",BS_AUTOCHECKBOX,140,93,153,
+                    10
+    LTEXT           "Frequency (MHz)",IDC_STATIC,63,29,56,8
+END
+
+IDD_PCLINK_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    PUSHBUTTON      "D&efaults",IDC_PCLINK_DEFAULTS_BTN,98,159,58,14
+    PUSHBUTTON      "&Undo",IDC_PCLINK_UNDO_BTN,166,159,58,14
+    EDITTEXT        IDC_DATAFLAG_EDIT,65,115,17,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATAFLAG_TIMER_EDIT,157,115,12,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DATAFLAG_RESIG_EDIT,65,130,12,12,ES_AUTOHSCROLL
+    CONTROL         "Send Un&corrected Error Count with Message",
+                    IDC_ERRMSGCNT_CHK,"Button",BS_AUTOCHECKBOX,65,42,156,10
+    CONTROL         "Send Receipt Date and Time &with Message",
+                    IDC_SENDTIMEDATE_CHK,"Button",BS_AUTOCHECKBOX,65,54,152,
+                    10
+    CONTROL         "Send &Inventory Control Number with Message",
+                    IDC_ICN_CHK,"Button",BS_AUTOCHECKBOX,65,66,159,10
+    CONTROL         "Send Source &Address with Message",IDC_SENDSOURCE_CHK,
+                    "Button",BS_AUTOCHECKBOX,65,78,159,10
+    CONTROL         "Send Data-Flag Notification Upon Message &Receipt",
+                    IDC_SENDDATAFLAG_CHK,"Button",BS_AUTOCHECKBOX,65,90,179,
+                    10
+    CONTROL         "Use &Non-Protocol Mode (XMODEM if unchecked)",
+                    IDC_NONPROTOCOL_CHK,"Button",BS_AUTOCHECKBOX,65,102,179,
+                    10
+    LTEXT           "Data-Flag Character",IDC_STATIC,84,118,67,8,NOT 
+                    WS_GROUP
+    LTEXT           "Maximum Number of Status Indicators per Transmission",
+                    IDC_STATIC,81,133,180,8
+    LTEXT           "Re-Transmission Delay",IDC_STATIC,173,118,75,8
+    GROUPBOX        " Companion PC Serial Link Options ",IDC_STATIC,56,26,
+                    210,124
+END
+
+IDD_R50REG_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_INCOMMUNICADO_EDIT,104,48,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_COMMUNICADO_EDIT,104,63,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AGGREG_ATTACK_EDIT,104,77,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AGGREGCEILING_EDIT,104,91,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AGGRETRYTIMER_EDIT,104,106,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_AGGRETRYCOUNT_EDIT,104,120,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_INRANGE_EDIT,104,134,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_OUTOFRANGE_EDIT,104,149,40,13,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALOHARETRYTIMER_EDIT,245,51,40,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALOHARETRYCOUNT_EDIT,245,66,40,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_ALOHA_RANDOM_INTERVAL_EDIT,254,101,36,13,
+                    ES_UPPERCASE | ES_AUTOHSCROLL
+    PUSHBUTTON      "D&efaults",IDC_R50REG_DEFAULTS_BTN,210,127,58,14
+    PUSHBUTTON      "&Undo",IDC_R50REG_UNDO_BTN,210,147,58,14
+    LTEXT           "Incommunicado Timer",IDC_INCOMMTIMER_STATIC,24,51,72,8
+    LTEXT           "Communicado Timer",IDC_COMMTIMER_STATIC,24,66,66,8
+    LTEXT           "Aggressive Attack",IDC_AGGRATTACK_STATIC,24,80,60,8
+    LTEXT           "Aggressive Ceiling",IDC_AGGRCEILING_STATIC,24,94,61,8
+    LTEXT           "Aggressive Retry Timer",IDC_AGGRETRYTIMER_STATIC,24,108,
+                    76,8
+    LTEXT           "Aggressive Retry Count",IDC_AGGRRETRY_STATIC,24,122,78,
+                    8
+    LTEXT           "Retry Timer",IDC_ALOHARETRYTIMER_STATIC,179,54,39,8
+    LTEXT           "Retry Count",IDC_ALOHARETRYCOUNT_STATIC,179,68,40,8
+    CONTROL         "&Auto-Registration Mode",IDC_AUTOREG_CHECK,"Button",
+                    BS_AUTOCHECKBOX,24,37,88,10
+    CONTROL         "Transmitter &State Change Notify",IDC_TXCHGNOTIFY_CHECK,
+                    "Button",BS_AUTOCHECKBOX,179,37,115,10
+    GROUPBOX        " Aloha Packet Transmission ",IDC_STATIC,171,23,135,64
+    GROUPBOX        " Registration ",IDC_STATIC,16,23,148,152
+    LTEXT           "In-Range Timer",IDC_INRANGETIMER_STATIC,24,136,51,8
+    LTEXT           "Out-of-Range Timer",IDC_OUTOFRANGE_STATIC,24,150,65,8
+    CONTROL         "UPS",IDC_INCOMMUNICADO_UP,"Button",BS_OWNERDRAW | 
+                    WS_GROUP,144,48,16,6
+    CONTROL         "DNS",IDC_INCOMMUNICADO_DN,"Button",BS_OWNERDRAW,144,54,
+                    16,6
+    CONTROL         "UPS",IDC_COMMUNICADO_UP,"Button",BS_OWNERDRAW | 
+                    WS_GROUP,144,63,16,6
+    CONTROL         "DNS",IDC_COMMUNICADO_DN,"Button",BS_OWNERDRAW,144,69,16,
+                    6
+    CONTROL         "UPS",IDC_AGGRATTACK_UP,"Button",BS_OWNERDRAW | WS_GROUP,
+                    144,77,16,6
+    CONTROL         "DNS",IDC_AGGRATTACK_DN,"Button",BS_OWNERDRAW,144,83,16,
+                    6
+    CONTROL         "UPS",IDC_AGGRCEILING_UP,"Button",BS_OWNERDRAW | 
+                    WS_GROUP,144,91,16,6
+    CONTROL         "DNS",IDC_AGGRCEILING_DN,"Button",BS_OWNERDRAW,144,97,16,
+                    6
+    CONTROL         "UPS",IDC_AGGRRETRYTIMER_UP,"Button",BS_OWNERDRAW | 
+                    WS_GROUP,144,106,16,6
+    CONTROL         "DNS",IDC_AGGRRETRYTIMER_DN,"Button",BS_OWNERDRAW,144,
+                    112,16,6
+    CONTROL         "UPS",IDC_AGGRRETRYCNT_UP,"Button",BS_OWNERDRAW | 
+                    WS_GROUP,144,120,16,6
+    CONTROL         "DNS",IDC_AGGRRETRYCNT_DN,"Button",BS_OWNERDRAW,144,126,
+                    16,6
+    CONTROL         "UPS",IDC_INRANGETIMER_UP,"Button",BS_OWNERDRAW | 
+                    WS_GROUP,144,134,16,6
+    CONTROL         "DNS",IDC_INRANGETIMER_DN,"Button",BS_OWNERDRAW,144,140,
+                    16,6
+    CONTROL         "UPS",IDC_OORTIMER_UP,"Button",BS_OWNERDRAW | WS_GROUP,
+                    144,149,16,6
+    CONTROL         "DNS",IDC_OORTIMER_DN,"Button",BS_OWNERDRAW,144,155,16,6
+    CONTROL         "UPS",IDC_RETRYTIMER_UP,"Button",BS_OWNERDRAW | WS_GROUP,
+                    285,51,16,6
+    CONTROL         "DNS",IDC_RETRYTIMER_DN,"Button",BS_OWNERDRAW,285,57,16,
+                    6
+    CONTROL         "UPS",IDC_RETRYCNT_UP,"Button",BS_OWNERDRAW | WS_GROUP,
+                    285,66,16,6
+    CONTROL         "DNS",IDC_RETRYCNT_DN,"Button",BS_OWNERDRAW,285,72,16,6
+    LTEXT           "Randomization Interval",IDC_RANDOMIZEINT_STATIC,174,103,
+                    76,8
+    CONTROL         "UPS",IDC_RANDOM_INT_UP,"Button",BS_OWNERDRAW | WS_GROUP,
+                    290,101,16,6
+    CONTROL         "DNS",IDC_RANDOM_INT_DN,"Button",BS_OWNERDRAW,290,107,16,
+                    6
+END
+
+IDD_CANNEDMSGS_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CAN_MSG0,21,38,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG1,21,52,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG2,21,66,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG3,21,80,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG4,95,38,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG5,95,52,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG6,95,66,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG7,95,80,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG8,173,38,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG9,173,52,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG10,173,66,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG11,173,80,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG12,250,38,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG13,250,52,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG14,250,66,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_CAN_MSG15,250,80,58,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIV_FWD_REV_EDIT,263,96,16,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_DIV_IOD_EDIT,263,110,16,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_MCR_CNT_EDIT,223,147,20,12,ES_AUTOHSCROLL
+    PUSHBUTTON      "D&efaults",IDC_CANNEDMSGS_DEFAULTS_BTN,99,176,58,14
+    PUSHBUTTON      "&Undo",IDC_CANNEDMSGS_UNDO_BTN,164,176,58,14
+    GROUPBOX        " Canned Messages ",IDC_STATIC,5,20,312,108
+    LTEXT           "Dividing index between Fwd/Rev CMC and Fwd-Only CMC:",
+                    IDC_DIVFWDREV_STATIC,44,99,191,8
+    LTEXT           "15",IDC_STATIC_15,239,83,10,8
+    LTEXT           "14",IDC_STATIC_14,239,68,10,8
+    LTEXT           "13",IDC_STATIC_13,239,54,10,8
+    LTEXT           "12",IDC_STATIC_12,239,40,10,8,SS_NOPREFIX
+    LTEXT           "3",IDC_STATIC,12,83,6,8
+    LTEXT           "2",IDC_STATIC,12,68,6,8
+    LTEXT           "1",IDC_STATIC,12,54,6,8
+    LTEXT           "0",IDC_STATIC,12,40,6,8
+    LTEXT           "4",IDC_STATIC,88,40,6,8
+    LTEXT           "5",IDC_STATIC,88,54,6,8
+    LTEXT           "6",IDC_STATIC,88,68,6,8
+    LTEXT           "7",IDC_STATIC,88,83,6,8
+    LTEXT           "8",IDC_STATIC,166,40,6,8
+    LTEXT           "9",IDC_STATIC,166,54,6,8
+    LTEXT           "10",IDC_STATIC,162,68,10,8
+    LTEXT           "11",IDC_STATIC,162,83,10,8
+    LTEXT           "Dividing index between Fwd-Only CMC and Info-On-Demand CMC:",
+                    IDC_DIVIOD_STATIC,44,112,215,8
+    CONTROL         "Enable &Info-On-Demand",IDC_SENDMSGENABLE_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,21,160,89,10
+    CONTROL         "Enable &Multiple-Choice Responses",
+                    IDC_MULTICHOICE_RESPONSE,"Button",BS_AUTOCHECKBOX | 
+                    WS_TABSTOP,21,148,124,10
+    LTEXT           "Reply Attempt Limit:",IDC_NREPEAT_STATIC,154,149,66,8
+    LTEXT           "Maximum number of Canned Messages (Fwd/Rev and Fwd-Only):",
+                    IDC_DIVIOD_2_STATIC,44,112,211,8
+    LTEXT           "2-Way Messaging Options:",IDC_STATIC,12,137,88,8
+END
+
+IDD_PROG_ALERT_DLG DIALOG DISCARDABLE  0, 0, 214, 113
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE
+FONT 8, "MS Sans Serif"
+BEGIN
+    SCROLLBAR       IDC_SCROLL_BEAT0,24,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT1,32,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT2,40,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT3,48,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT4,56,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT5,64,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT6,72,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT7,80,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT8,88,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT9,96,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT10,104,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT11,112,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT12,120,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT13,128,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT14,136,25,8,66,SBS_VERT | WS_TABSTOP
+    SCROLLBAR       IDC_SCROLL_BEAT15,144,25,8,66,SBS_VERT | WS_TABSTOP
+    PUSHBUTTON      "&Test",IDC_TEST_BTN,163,23,32,14,NOT WS_TABSTOP
+    PUSHBUTTON      "&Save",IDC_SAVE_BTN,163,41,32,14,NOT WS_TABSTOP
+    PUSHBUTTON      "&Quit",IDCANCEL,163,59,32,14,NOT WS_TABSTOP
+    GROUPBOX        "   Custom Alert : 1 measure : 16 beats  ",IDC_STATIC,19,
+                    15,138,81
+    PUSHBUTTON      "&Help",IDC_PROGALERT_HELP_BTN,163,77,32,14,NOT 
+                    WS_TABSTOP
+END
+
+IDD_THETUNING_DLG DIALOG DISCARDABLE  0, 0, 266, 181
+STYLE DS_MODALFRAME | WS_POPUP | WS_VISIBLE | WS_CAPTION
+CAPTION "Transceiver Tuning"
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_CENTERFRQ_EDIT,90,19,38,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "UPS",IDC_CENTERFRQ_UP,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,128,19,16,6
+    CONTROL         "DNS",IDC_CENTERFRQ_DN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,128,25,16,6
+    EDITTEXT        IDC_MODRATE_EDIT,90,35,38,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL | ES_READONLY
+    CONTROL         "UPS",IDC_MODRATE_UP,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,128,35,16,6
+    CONTROL         "DNS",IDC_MODRATE_DN,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    128,41,16,6
+    EDITTEXT        IDC_REFOSC_EDIT,90,51,38,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "UPS",IDC_REFOSC_UP,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,128,51,16,6
+    CONTROL         "DNS",IDC_REFOSC_DN,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    128,57,16,6
+    EDITTEXT        IDC_MODBAL_EDIT,90,67,38,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "UPS",IDC_MODBAL_UP,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,128,67,16,6
+    CONTROL         "DNS",IDC_MODBAL_DN,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    128,73,16,6
+    EDITTEXT        IDC_POS2400_EDIT,90,83,38,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "UPS",IDC_POS2400_UP,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,128,83,16,6
+    CONTROL         "DNS",IDC_POS2400_DN,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    128,89,16,6
+    EDITTEXT        IDC_POS800_EDIT,90,99,38,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "UPS",IDC_POS800_UP,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,128,99,16,6
+    CONTROL         "DNS",IDC_POS800_DN,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    128,105,16,6
+    EDITTEXT        IDC_NEG800_EDIT,90,115,38,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "UPS",IDC_NEG800_UP,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,128,115,16,6
+    CONTROL         "DNS",IDC_NEG800_DN,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    128,121,16,6
+    EDITTEXT        IDC_NEG2400_EDIT,90,131,38,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "UPS",IDC_NEG2400_UP,"Button",BS_OWNERDRAW | WS_GROUP | 
+                    WS_TABSTOP,128,131,16,6
+    CONTROL         "DNS",IDC_NEG2400_DN,"Button",BS_OWNERDRAW | WS_TABSTOP,
+                    128,137,16,6
+    PUSHBUTTON      "&Default",IDC_TUNING_DEFAULT,28,151,50,12
+    PUSHBUTTON      "&Undo",IDC_TUNING_UNDO,88,151,50,12
+    PUSHBUTTON      "&Start Test",IDC_START_TEST,160,20,87,12
+    PUSHBUTTON      "St&op Test",IDC_STOP_TEST,160,36,87,12
+    PUSHBUTTON      "Start/Stop for T&rigger",IDC_ONOFF_BURST,160,52,87,12
+    PUSHBUTTON      "Auto-&Tune",IDC_AUTOTUNE_BTN,160,68,87,12
+    PUSHBUTTON      "<<<<  &Previous Test",IDC_PREV_TEST,160,84,87,12
+    PUSHBUTTON      "&Next Test   >>>>",IDC_NEXT_TEST,160,100,87,12
+    PUSHBUTTON      "&Help",ID_TUNINGDLG_HELP,173,124,62,12
+    PUSHBUTTON      "&Cancel",IDCANCEL,173,140,62,12
+    PUSHBUTTON      "&Accept",IDC_TUNING_ACCEPT,173,156,62,12
+    LTEXT           "Center Frequency",IDC_CENTERFRQ_STATIC,21,21,59,8
+    LTEXT           "Modulation Rate",IDC_MODRATE_STATIC,21,37,55,8
+    LTEXT           "Reference Oscillator",IDC_REFOSC_STATIC,21,53,68,8
+    LTEXT           "Modulation Balance",IDC_MODBAL_STATIC,21,69,66,8
+    LTEXT           "+2400 Hz Deviation",IDC_POS2400_STATIC,21,85,66,8
+    LTEXT           "+800 Hz Deviation",IDC_POS800_STATIC,21,101,62,8
+    LTEXT           "-800 Hz Deviation",IDC_NEG800_STATIC,21,116,60,8
+    LTEXT           "-2400 Hz Deviation",IDC_NEG2400_STATIC,21,133,64,8
+    GROUPBOX        " Configuration ",IDC_STATIC,13,8,135,163
+    GROUPBOX        " Control ",IDC_STATIC,154,8,98,112
+END
+
+IDD_HEXEDITDLG DIALOG DISCARDABLE  0, 0, 337, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    EDITTEXT        IDC_ROW0COL0,26,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COL1,40,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COL2,54,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COL3,68,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COL4,82,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COL5,96,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COL6,110,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COL7,124,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COL8,138,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COL9,152,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COLA,166,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COLB,180,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COLC,194,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COLD,208,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COLE,222,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW0COLF,236,31,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COL0,26,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COL1,40,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COL2,54,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COL3,68,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COL4,82,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COL5,96,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COL6,110,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COL7,124,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COL8,138,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COL9,152,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COLA,166,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COLB,180,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COLC,194,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COLD,208,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COLE,222,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW1COLF,236,43,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COL0,26,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COL1,40,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COL2,54,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COL3,68,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COL4,82,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COL5,96,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COL6,110,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COL7,124,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COL8,138,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COL9,152,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COLA,166,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COLB,180,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COLC,194,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COLD,208,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COLE,222,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW2COLF,236,55,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COL0,26,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COL1,40,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COL2,54,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COL3,68,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COL4,82,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COL5,96,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COL6,110,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COL7,124,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COL8,138,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COL9,152,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COLA,166,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COLB,180,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COLC,194,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COLD,208,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COLE,222,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW3COLF,236,67,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COL0,26,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COL1,40,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COL2,54,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COL3,68,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COL4,82,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COL5,96,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COL6,110,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COL7,124,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COL8,138,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COL9,152,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COLA,166,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COLB,180,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COLC,194,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COLD,208,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COLE,222,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW4COLF,236,79,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COL0,26,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COL1,40,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COL2,54,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COL3,68,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COL4,82,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COL5,96,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COL6,110,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COL7,124,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COL8,138,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COL9,152,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COLA,166,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COLB,180,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COLC,194,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COLD,208,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COLE,222,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW5COLF,236,91,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COL0,26,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COL1,40,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COL2,54,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COL3,68,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COL4,82,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COL5,96,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COL6,110,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COL7,124,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COL8,138,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COL9,152,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COLA,166,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COLB,180,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COLC,194,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COLD,208,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COLE,222,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW6COLF,236,103,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COL0,26,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COL1,40,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COL2,54,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COL3,68,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COL4,82,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COL5,96,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COL6,110,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COL7,124,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COL8,138,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COL9,152,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COLA,166,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COLB,180,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COLC,194,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COLD,208,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COLE,222,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW7COLF,236,115,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COL0,26,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COL1,40,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COL2,54,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COL3,68,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COL4,82,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COL5,96,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COL6,110,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COL7,124,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COL8,138,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COL9,152,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COLA,166,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COLB,180,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COLC,194,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COLD,208,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COLE,222,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW8COLF,236,127,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COL0,26,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COL1,40,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COL2,54,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COL3,68,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COL4,82,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COL5,96,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COL6,110,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COL7,124,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COL8,138,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COL9,152,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COLA,166,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COLB,180,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COLC,194,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COLD,208,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COLE,222,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_ROW9COLF,236,139,14,12,ES_UPPERCASE | ES_NOHIDESEL
+    EDITTEXT        IDC_HEXADDR0,4,32,21,12,ES_UPPERCASE | ES_NOHIDESEL | 
+                    ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_HEXADDR1,4,44,21,12,ES_UPPERCASE | ES_NOHIDESEL | 
+                    ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_HEXADDR2,4,56,21,12,ES_UPPERCASE | ES_NOHIDESEL | 
+                    ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_HEXADDR3,4,68,21,12,ES_UPPERCASE | ES_NOHIDESEL | 
+                    ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_HEXADDR5,4,92,21,12,ES_UPPERCASE | ES_NOHIDESEL | 
+                    ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_HEXADDR4,4,80,21,12,ES_UPPERCASE | ES_NOHIDESEL | 
+                    ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_HEXADDR7,4,116,21,12,ES_UPPERCASE | ES_NOHIDESEL | 
+                    ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_HEXADDR6,4,104,21,12,ES_UPPERCASE | ES_NOHIDESEL | 
+                    ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_HEXADDR8,4,128,21,12,ES_UPPERCASE | ES_NOHIDESEL | 
+                    ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    EDITTEXT        IDC_HEXADDR9,4,140,21,12,ES_UPPERCASE | ES_NOHIDESEL | 
+                    ES_READONLY | WS_DISABLED | NOT WS_BORDER | NOT 
+                    WS_TABSTOP
+    CTEXT           "00",IDC_STATIC,27,23,10,8,WS_DISABLED
+    CTEXT           "01",IDC_STATIC,41,23,10,8,WS_DISABLED
+    CTEXT           "02",IDC_STATIC,55,23,10,8,WS_DISABLED
+    CTEXT           "03",IDC_STATIC,69,23,10,8,WS_DISABLED
+    CTEXT           "05",IDC_STATIC,97,23,10,8,WS_DISABLED
+    CTEXT           "04",IDC_STATIC,83,23,10,8,WS_DISABLED
+    CTEXT           "06",IDC_STATIC,111,23,10,8,WS_DISABLED
+    CTEXT           "07",IDC_STATIC,125,23,10,8,WS_DISABLED
+    CTEXT           "08",IDC_STATIC,139,23,10,8,WS_DISABLED
+    CTEXT           "09",IDC_STATIC,154,23,10,8,WS_DISABLED
+    CTEXT           "0A",IDC_STATIC,168,23,10,8,WS_DISABLED
+    CTEXT           "0B",IDC_STATIC,182,23,10,8,WS_DISABLED
+    CTEXT           "0C",IDC_STATIC,196,23,10,8,WS_DISABLED
+    CTEXT           "0D",IDC_STATIC,210,23,11,8,WS_DISABLED
+    CTEXT           "0E",IDC_STATIC,224,23,10,8,WS_DISABLED
+    CTEXT           "0F",IDC_STATIC,238,23,10,8,WS_DISABLED
+    EDITTEXT        IDC_ROW0TEXT,250,31,73,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_ROW1TEXT,250,43,73,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_ROW2TEXT,250,55,73,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_ROW3TEXT,250,67,73,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_ROW4TEXT,250,79,73,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_ROW5TEXT,250,91,73,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_ROW6TEXT,250,103,73,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_ROW7TEXT,250,115,73,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_ROW8TEXT,250,127,73,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    EDITTEXT        IDC_ROW9TEXT,250,139,73,12,ES_READONLY | WS_DISABLED | 
+                    NOT WS_TABSTOP
+    SCROLLBAR       IDC_VSCROLL,323,31,10,121,SBS_VERT
+    PUSHBUTTON      "&Write Entire Codeplug",IDC_DOWNLOAD_NOW_BTN,130,162,76,
+                    14,NOT WS_TABSTOP
+END
+
+IDD_COMMVIEW_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+END
+
+IDD_COMSETTINGS DIALOG DISCARDABLE  25, 20, 126, 91
+STYLE WS_POPUP | WS_CAPTION
+CAPTION "COM Port Settings..."
+FONT 8, "Helv"
+BEGIN
+    COMBOBOX        IDC_PORTCB,55,20,55,35,CBS_DROPDOWNLIST | CBS_HASSTRINGS | 
+                    WS_VSCROLL | WS_TABSTOP
+    COMBOBOX        IDC_BAUDCB,55,35,55,35,CBS_DROPDOWNLIST | CBS_HASSTRINGS | 
+                    WS_VSCROLL | WS_TABSTOP
+    DEFPUSHBUTTON   "&Ok",IDOK,17,66,40,14
+    PUSHBUTTON      "&Cancel",IDCANCEL,68,66,40,14
+    GROUPBOX        " Options ",-1,5,5,115,53
+    RTEXT           "&Port:",-1,10,22,40,10
+    RTEXT           "&Baud Rate:",-1,10,36,40,10,NOT WS_GROUP
+END
+
+IDD_OPTIONS_R25_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "UPS",IDC_MSGREAD_UP_BTN,"Button",BS_OWNERDRAW | 
+                    WS_GROUP | WS_TABSTOP,213,109,17,6
+    CONTROL         "DNS",IDC_MSGREAD_DWN_BTN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,213,115,17,6
+    CONTROL         "UPS",IDC_ACKMSGPCTG_UP_BTN,"Button",BS_OWNERDRAW | 
+                    WS_GROUP | WS_TABSTOP,248,125,17,6
+    CONTROL         "DNS",IDC_ACKMSGPCTG_DWN_BTN,"Button",BS_OWNERDRAW | 
+                    WS_TABSTOP,248,131,17,6
+    PUSHBUTTON      "D&efaults",IDC_OPTIONS_DEFAULTS_BTN,97,157,58,14
+    PUSHBUTTON      "&Undo",IDC_OPTIONS_UNDO_BTN,167,157,58,14
+    EDITTEXT        IDC_MSG_READ_RESPONSE,170,109,43,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    LTEXT           "Message Read Response Mode:",IDC_STATIC,60,112,106,8
+    CONTROL         "Enable I&nternational Date Format (d-m-y)",
+                    IDC_INTNATNL_DATE_CHK,"Button",BS_AUTOCHECKBOX,60,43,142,
+                    10
+    GROUPBOX        " Miscellaneous ",IDC_STATIC,50,29,222,120
+    LTEXT           "Acceptable Message Error-Content Percentage:",
+                    IDC_MSG_ERR_STATIC,60,127,156,8
+    EDITTEXT        IDC_ACKMSGPCTG_EDIT,220,125,28,13,ES_AUTOHSCROLL | 
+                    ES_READONLY | NOT WS_TABSTOP
+    CONTROL         "Di&splay Time of Message Receipt",IDC_TIMESTAMP_CHECK,
+                    "Button",BS_AUTOCHECKBOX | WS_TABSTOP,60,55,120,10
+    CONTROL         "Enable 'Power-On' &RAM Check",IDC_POWERONRAM_CHECK,
+                    "Button",BS_AUTOCHECKBOX,60,67,112,10
+    EDITTEXT        IDC_REGFAILRESTTIME_EDIT,199,79,18,12,ES_AUTOHSCROLL
+    EDITTEXT        IDC_ASYNCSLEEPTIME_EDIT,155,94,18,12,ES_AUTOHSCROLL
+    LTEXT           "Asynchronous Sleep Cycle:",IDC_STATIC,60,96,90,8
+    LTEXT           "Partial Coverage Registration Rest Timer: ",IDC_STATIC,
+                    61,81,136,8
+END
+
+IDD_R25ADDRESS_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_SPIDDISABLE_CHK0,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,20,43,8,10
+    EDITTEXT        IDC_SPID_EDIT0,38,41,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PRIMSPID_CHECK0,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,80,43,8,10
+    CONTROL         "",IDC_SPIDZN_CHECK0,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,106,43,8,10
+    EDITTEXT        IDC_SPIDZN_EDIT0,123,41,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIDDISABLE_CHK1,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,20,58,8,10
+    EDITTEXT        IDC_SPID_EDIT1,38,55,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PRIMSPID_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,80,58,8,10
+    CONTROL         "",IDC_SPIDZN_CHECK1,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,106,58,8,10
+    EDITTEXT        IDC_SPIDZN_EDIT1,123,55,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIDDISABLE_CHK2,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,20,72,8,10
+    EDITTEXT        IDC_SPID_EDIT2,38,69,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PRIMSPID_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,80,72,8,10
+    CONTROL         "",IDC_SPIDZN_CHECK2,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,106,72,8,10
+    EDITTEXT        IDC_SPIDZN_EDIT2,123,69,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIDDISABLE_CHK3,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,20,86,8,10
+    EDITTEXT        IDC_SPID_EDIT3,38,83,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PRIMSPID_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,80,86,8,10
+    CONTROL         "",IDC_SPIDZN_CHECK3,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,106,86,8,10
+    EDITTEXT        IDC_SPIDZN_EDIT3,123,83,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIDDISABLE_CHK4,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,20,100,8,10
+    EDITTEXT        IDC_SPID_EDIT4,38,97,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PRIMSPID_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,80,100,8,10
+    CONTROL         "",IDC_SPIDZN_CHECK4,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,106,100,8,10
+    EDITTEXT        IDC_SPIDZN_EDIT4,123,97,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIDDISABLE_CHK5,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,20,114,8,10
+    EDITTEXT        IDC_SPID_EDIT5,38,111,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PRIMSPID_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,80,114,8,10
+    CONTROL         "",IDC_SPIDZN_CHECK5,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,106,114,8,10
+    EDITTEXT        IDC_SPIDZN_EDIT5,123,111,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIDDISABLE_CHK6,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,20,128,8,10
+    EDITTEXT        IDC_SPID_EDIT6,38,125,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PRIMSPID_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,80,128,8,10
+    CONTROL         "",IDC_SPIDZN_CHECK6,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,106,128,8,10
+    EDITTEXT        IDC_SPIDZN_EDIT6,123,125,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_SPIDDISABLE_CHK7,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,20,142,8,10
+    EDITTEXT        IDC_SPID_EDIT7,38,139,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_PRIMSPID_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,80,142,8,10
+    CONTROL         "",IDC_SPIDZN_CHECK7,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_TABSTOP,106,142,8,10
+    EDITTEXT        IDC_SPIDZN_EDIT7,123,139,30,12,ES_AUTOHSCROLL
+    CONTROL         "",IDC_ISVC_DISABLE_CHK0,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,184,37,8,10
+    EDITTEXT        IDC_SVC_ADDR_EDIT0,201,35,39,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_ISVC_DISABLE_CHK1,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,184,53,8,10
+    EDITTEXT        IDC_SVC_ADDR_EDIT1,201,51,39,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_ISVC_DISABLE_CHK2,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,184,69,8,10
+    EDITTEXT        IDC_SVC_ADDR_EDIT2,201,67,39,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_ISVC_DISABLE_CHK3,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,254,37,8,10
+    EDITTEXT        IDC_SVC_ADDR_EDIT3,270,35,39,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_ISVC_DISABLE_CHK4,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,254,53,8,10
+    EDITTEXT        IDC_SVC_ADDR_EDIT4,270,51,39,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_ISVC_DISABLE_CHK5,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT | WS_GROUP | WS_TABSTOP,254,69,8,10
+    EDITTEXT        IDC_SVC_ADDR_EDIT5,270,67,39,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_PER_ADDR1_EDIT,244,115,54,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    EDITTEXT        IDC_HOME_INDEX,244,133,54,12,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "D&efaults",IDC_ADDR_DEFAULTS_BTN,94,171,62,14
+    PUSHBUTTON      "U&ndo",IDC_ADDR_UNDO_BTN,164,171,62,14
+    GROUPBOX        " Information Service Addresses ",IDC_STATIC,169,15,147,
+                    75
+    CONTROL         "disable",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,175,
+                    27,24,8
+    GROUPBOX        " Service Provider Identifiers ",IDC_STATIC,6,15,155,145
+    LTEXT           "zoned",IDC_STATIC,99,32,22,8
+    LTEXT           "primary",IDC_STATIC,72,32,25,8
+    LTEXT           "SPID",IDC_STATIC,42,28,18,8
+    LTEXT           "Zone ID",IDC_STATIC,124,28,28,8
+    CONTROL         "disable",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,245,
+                    27,24,8
+    GROUPBOX        " Device Identifiers ",IDC_STATIC,169,98,147,62
+    LTEXT           "Personal Address",IDC_STATIC,182,117,58,8
+    LTEXT           "Home Index",IDC_STATIC,183,136,40,8
+    CONTROL         "disable",IDC_STATIC,"Static",SS_SIMPLE | WS_GROUP,11,32,
+                    24,8
+END
+
+IDD_PROTO25_FORM DIALOG DISCARDABLE  0, 0, 324, 200
+STYLE WS_CHILD
+FONT 8, "MS Sans Serif"
+BEGIN
+    CONTROL         "",IDC_DISABLE_F0,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT | 
+                    WS_GROUP,34,33,9,10
+    EDITTEXT        IDC_SCAN_F0,54,32,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F0,116,32,20,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F1,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT,
+                    34,50,9,10
+    EDITTEXT        IDC_SCAN_F1,54,48,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F1,116,48,20,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F2,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT,
+                    34,67,9,10
+    EDITTEXT        IDC_SCAN_F2,54,66,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F2,116,66,20,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F3,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT,
+                    34,84,9,10
+    EDITTEXT        IDC_SCAN_F3,54,83,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F3,116,83,20,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F4,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT,
+                    34,101,9,10
+    EDITTEXT        IDC_SCAN_F4,54,101,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F4,116,101,20,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F5,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT,
+                    34,118,9,10
+    EDITTEXT        IDC_SCAN_F5,54,117,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F5,116,117,20,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F6,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT,
+                    34,135,9,10
+    EDITTEXT        IDC_SCAN_F6,54,133,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F6,116,133,20,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F7,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT,
+                    34,153,9,10
+    EDITTEXT        IDC_SCAN_F7,54,151,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F7,116,151,20,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F8,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT,
+                    171,33,9,10
+    EDITTEXT        IDC_SCAN_F8,191,32,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F8,253,32,20,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F9,"Button",BS_AUTOCHECKBOX | BS_LEFTTEXT,
+                    171,50,9,10
+    EDITTEXT        IDC_SCAN_F9,191,48,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F9,253,48,20,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F10,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,171,67,9,10
+    EDITTEXT        IDC_SCAN_F10,191,66,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F10,253,66,20,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F11,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,171,84,9,10
+    EDITTEXT        IDC_SCAN_F11,191,83,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F11,253,83,20,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F12,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,171,101,9,10
+    EDITTEXT        IDC_SCAN_F12,191,101,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F12,253,101,20,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F13,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,171,118,9,10
+    EDITTEXT        IDC_SCAN_F13,191,117,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F13,253,117,20,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F14,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,171,135,9,10
+    EDITTEXT        IDC_SCAN_F14,191,133,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F14,253,133,20,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    CONTROL         "",IDC_DISABLE_F15,"Button",BS_AUTOCHECKBOX | 
+                    BS_LEFTTEXT,171,153,9,10
+    EDITTEXT        IDC_SCAN_F15,191,151,42,13,ES_UPPERCASE | ES_AUTOHSCROLL
+    EDITTEXT        IDC_DELAY_F15,253,151,20,13,ES_UPPERCASE | 
+                    ES_AUTOHSCROLL
+    PUSHBUTTON      "D&efaults",IDC_PRO_DEFAULTS_BTN,97,178,58,14
+    PUSHBUTTON      "&Undo",IDC_PRO_UNDO_BTN,168,178,58,14
+    CONTROL         "UPS",IDC_CHNUM_UP_F0,"Button",BS_OWNERDRAW | WS_GROUP,
+                    96,32,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F0,"Button",BS_OWNERDRAW,96,38,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F0,"Button",BS_OWNERDRAW | WS_GROUP,
+                    136,32,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F0,"Button",BS_OWNERDRAW,136,38,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F1,"Button",BS_OWNERDRAW | WS_GROUP,
+                    96,48,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F1,"Button",BS_OWNERDRAW,96,54,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F1,"Button",BS_OWNERDRAW | WS_GROUP,
+                    136,48,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F1,"Button",BS_OWNERDRAW,136,54,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F2,"Button",BS_OWNERDRAW | WS_GROUP,
+                    96,66,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F2,"Button",BS_OWNERDRAW,96,72,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F2,"Button",BS_OWNERDRAW | WS_GROUP,
+                    136,66,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F2,"Button",BS_OWNERDRAW,136,72,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F3,"Button",BS_OWNERDRAW | WS_GROUP,
+                    96,83,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F3,"Button",BS_OWNERDRAW,96,89,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F3,"Button",BS_OWNERDRAW | WS_GROUP,
+                    136,83,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F3,"Button",BS_OWNERDRAW,136,89,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F4,"Button",BS_OWNERDRAW | WS_GROUP,
+                    96,101,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F4,"Button",BS_OWNERDRAW,96,107,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F4,"Button",BS_OWNERDRAW | WS_GROUP,
+                    136,101,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F4,"Button",BS_OWNERDRAW,136,107,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F5,"Button",BS_OWNERDRAW | WS_GROUP,
+                    96,117,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F5,"Button",BS_OWNERDRAW,96,123,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F5,"Button",BS_OWNERDRAW | WS_GROUP,
+                    136,117,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F5,"Button",BS_OWNERDRAW,136,123,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F6,"Button",BS_OWNERDRAW | WS_GROUP,
+                    96,133,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F6,"Button",BS_OWNERDRAW,96,139,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F6,"Button",BS_OWNERDRAW | WS_GROUP,
+                    136,133,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F6,"Button",BS_OWNERDRAW,136,139,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F7,"Button",BS_OWNERDRAW | WS_GROUP,
+                    96,151,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F7,"Button",BS_OWNERDRAW,96,157,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F7,"Button",BS_OWNERDRAW | WS_GROUP,
+                    136,151,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F7,"Button",BS_OWNERDRAW,136,157,15,6
+    LTEXT           "Scan Time",-1,115,20,36,8
+    LTEXT           "Scan Frequency",-1,54,20,54,8
+    LTEXT           "disable",-1,27,22,24,8
+    GROUPBOX        " Control Channel Scan Frequencies (MHz) ",-1,22,8,279,
+                    164
+    CONTROL         "UPS",IDC_CHNUM_UP_F8,"Button",BS_OWNERDRAW | WS_GROUP,
+                    233,32,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F8,"Button",BS_OWNERDRAW,233,38,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F8,"Button",BS_OWNERDRAW | WS_GROUP,
+                    273,32,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F8,"Button",BS_OWNERDRAW,273,38,15,6
+    LTEXT           "disable",-1,165,22,24,8
+    LTEXT           "Scan Frequency",-1,191,20,54,8
+    LTEXT           "Scan Time",-1,253,20,36,8
+    CONTROL         "UPS",IDC_CHNUM_UP_F9,"Button",BS_OWNERDRAW | WS_GROUP,
+                    233,48,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F9,"Button",BS_OWNERDRAW,233,54,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F9,"Button",BS_OWNERDRAW | WS_GROUP,
+                    273,48,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F9,"Button",BS_OWNERDRAW,273,54,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F10,"Button",BS_OWNERDRAW | WS_GROUP,
+                    233,66,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F10,"Button",BS_OWNERDRAW,233,72,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F10,"Button",BS_OWNERDRAW | WS_GROUP,
+                    273,66,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F10,"Button",BS_OWNERDRAW,273,72,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F11,"Button",BS_OWNERDRAW | WS_GROUP,
+                    233,83,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F11,"Button",BS_OWNERDRAW,233,89,15,6
+    CONTROL         "UPS",IDC_DELAY_UP_F11,"Button",BS_OWNERDRAW | WS_GROUP,
+                    273,83,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F11,"Button",BS_OWNERDRAW,273,89,15,6
+    CONTROL         "UPS",IDC_CHNUM_UP_F12,"Button",BS_OWNERDRAW | WS_GROUP,
+                    233,101,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F12,"Button",BS_OWNERDRAW,233,107,15,
+                    6
+    CONTROL         "UPS",IDC_DELAY_UP_F12,"Button",BS_OWNERDRAW | WS_GROUP,
+                    273,101,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F12,"Button",BS_OWNERDRAW,273,107,15,
+                    6
+    CONTROL         "UPS",IDC_CHNUM_UP_F13,"Button",BS_OWNERDRAW | WS_GROUP,
+                    233,117,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F13,"Button",BS_OWNERDRAW,233,123,15,
+                    6
+    CONTROL         "UPS",IDC_DELAY_UP_F13,"Button",BS_OWNERDRAW | WS_GROUP,
+                    273,117,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F13,"Button",BS_OWNERDRAW,273,123,15,
+                    6
+    CONTROL         "UPS",IDC_CHNUM_UP_F14,"Button",BS_OWNERDRAW | WS_GROUP,
+                    233,133,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F14,"Button",BS_OWNERDRAW,233,139,15,
+                    6
+    CONTROL         "UPS",IDC_DELAY_UP_F14,"Button",BS_OWNERDRAW | WS_GROUP,
+                    273,133,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F14,"Button",BS_OWNERDRAW,273,139,15,
+                    6
+    CONTROL         "UPS",IDC_CHNUM_UP_F15,"Button",BS_OWNERDRAW | WS_GROUP,
+                    233,151,15,6
+    CONTROL         "DNS",IDC_CHNUM_DN_F15,"Button",BS_OWNERDRAW,233,157,15,
+                    6
+    CONTROL         "UPS",IDC_DELAY_UP_F15,"Button",BS_OWNERDRAW | WS_GROUP,
+                    273,151,15,6
+    CONTROL         "DNS",IDC_DELAY_DN_F15,"Button",BS_OWNERDRAW,273,157,15,
+                    6
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// Dialog Info
+//
+
+IDD_COMSETTINGS DLGINIT
+BEGIN
+    544, 0x403, 5, 0
+0x4f43, 0x314d, "\000" 
+    544, 0x403, 5, 0
+0x4f43, 0x324d, "\000" 
+    544, 0x403, 5, 0
+0x4f43, 0x334d, "\000" 
+    544, 0x403, 5, 0
+0x4f43, 0x344d, "\000" 
+    545, 0x403, 5, 0
+0x3639, 0x3030, "\000" 
+    545, 0x403, 5, 0
+0x3834, 0x3030, "\000" 
+    545, 0x403, 5, 0
+0x3432, 0x3030, "\000" 
+    545, 0x403, 5, 0
+0x3231, 0x3030, "\000" 
+    0
+END
+
+
+//////////////////////////////////////////////////////////////////////////////
+//
+// String Table
+//
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    IDR_MAINFRAME           "PPS\nCodeplug\nCodeplug Document\nCodeplug Files (*.s19)\n.s19\nCodeplug.Document\nCodeplug Document"
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    ID_VIEW_NEXT            "Switch to the next view."
+    ID_UTILITY_ALLDEFAULT   "Automatically set all non-unique fields to default content."
+    ID_UTILITY_SETALLARCHIVE 
+                            "Automatically set all non-unique fields to archived content."
+    ID_UTILITY_DELTA_PLAY   "Repeat previously recorded configuration modifications.\nPlay Recording"
+    ID_UTILITY_DELTA_ERASE  "Erase any recorded configuration modifications."
+    ID_UTILITY_MACRO        "Configuration modification recording/playback macro."
+    ID_DEVICE_COMSETTINGS   "Configure the serial port."
+    ID_UTILITY_DELTA_REPEAT "Initiate a Device-Read, Play Modifications, and Device-Write.\nRead-Play-Write"
+    ID_UTILITY_DELTA_ONOFF  "Record configuration modifications.\nRecord Modifications"
+    IDP_ESNVALWARN          "WARNING:  The device Electronic Serial Number (ESN) does not\ncorrespond to the assigned device Personal Address.\nThis may be an error condition.  \n\nPress F1 for additional details if necessary."
+    IDP_ESNVALFIX           "WARNING:  The device Electronic Serial Number (ESN) does not \ncorrespond to the assigned device Personal Address.  This may be \nan error condition.  \n\nPress YES to fix, NO to ignore, or F1 for more details."
+END
+
+STRINGTABLE PRELOAD DISCARDABLE 
+BEGIN
+    AFX_IDS_APP_TITLE       "PPS"
+    AFX_IDS_IDLEMESSAGE     " "
+    AFX_IDS_HELPMODEMESSAGE "Select an object on which to get Help"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_INDICATOR_EXT        "EXT"
+    ID_INDICATOR_CAPS       "CAP"
+    ID_INDICATOR_NUM        "NUM"
+    ID_INDICATOR_SCRL       "SCRL"
+    ID_INDICATOR_OVR        "OVR"
+    ID_INDICATOR_REC        "REC"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_NEW             "Create a new document."
+    ID_FILE_OPEN            "Open an existing document.\nOpen File"
+    ID_FILE_CLOSE           "Close the active document"
+    ID_FILE_SAVE            "Save the active document.\nSave File"
+    ID_FILE_SAVE_AS         "Save the active document with a new name"
+    ID_FILE_PRINT_SETUP     "Change the printer and printing options."
+    ID_FILE_PRINT           "Print the active document.\nPrint File"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_APP_ABOUT            "Display program information, version number and copyright"
+    ID_APP_EXIT             "Quit the application; prompts to save documents"
+    ID_HELP_INDEX           "Display the PPS Help utility main index."
+    ID_HELP_USING           "Display instructions about how to use help"
+    ID_CONTEXT_HELP         "Display help for clicked on buttons, menus and windows\nContext-Sensitive Help"
+    ID_HELP                 "Display help for current task or command"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_FILE_MRU_FILE1       "Open this document"
+    ID_FILE_MRU_FILE2       "Open this document"
+    ID_FILE_MRU_FILE3       "Open this document"
+    ID_FILE_MRU_FILE4       "Open this document"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_TOOLBAR         "Show or hide the toolbar"
+    ID_VIEW_STATUS_BAR      "Show or hide the status bar"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCSIZE          "Change the window size"
+    AFX_IDS_SCMOVE          "Change the window position"
+    AFX_IDS_SCMINIMIZE      "Reduce the window to an icon"
+    AFX_IDS_SCMAXIMIZE      "Enlarge the window to full size"
+    AFX_IDS_SCNEXTWINDOW    "Switch to the next document window"
+    AFX_IDS_SCPREVWINDOW    "Switch to the previous document window"
+    AFX_IDS_SCCLOSE         "Close the active window and prompts to save the documents"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    AFX_IDS_SCRESTORE       "Restore the window to normal size"
+    AFX_IDS_SCTASKLIST      "Activate Task List"
+    ID_INDICATOR_PORT       "COMx:9600:n,8,1"
+    ID_INDICATOR_IOOP       "VERIFY"
+    ID_INDICATOR_PROGRESS   "||||||||||"
+    IDS_CHPMDA_CONFIG       "\nMDA : GPIB card configuration failed.\n"
+    IDS_CHPMDA_FINDMDA      "\nMDA : Device not found.\n"
+    IDS_CHPMDA_OPENMDA      "\nMDA : Failed to open device.\n"
+    IDS_CHPMDA_CLRMDA       "\nMDA : Failed to clear device.\n"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PAGER_READ           "Read device codeplug (EEPROM).\nRead from Device"
+    ID_PAGER_WRITE          "Write device codeplug (EEPROM).\nWrite to Device"
+    ID_PAGER_PASSWD         "Set the device access password."
+    ID_PAGER_COMMO          "Configure the serial port."
+    ID_PAGER_PORT_COM1      "Use the COM1 serial port connector if available."
+    ID_PAGER_PORT_COM2      "Use the COM2 serial port connector if available."
+    ID_PAGER_PORT_COM3      "Use the COM3 serial port connector if available."
+    ID_PAGER_PORT_COM4      "Use the COM4 serial port connector if available."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_PAGER_TX_TUNING      "Tune the transceiver circuitry."
+    ID_TXTUNE_SCF           "Tune the transmission of carrier frequency without data.\nSilent Carrier"
+    ID_TXTUNE_MODBAL_LOW    "Tune the low frequency modulation signal at full deviation.\nMod-Balance Low"
+    ID_TXTUNE_MODBAL_HIGH   "Tune the high frequency modulation signal at full deviation.\nMod-Balance High"
+    ID_RXTUNE_REFOSC        "Tune the reference oscillator.\nReference Oscillator"
+    ID_PAGER_SW_RESET       "Force a soft reset."
+    ID_PAGER_HW_RESET       "Force a hard reset."
+    ID_VIEW_SECURITY        "View the security configuration.\nPasswords"
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_VIEW_ADDRESSES       "View the addressing configuration.\nAddresses"
+    ID_VIEW_PROTOCOL        "View the protocol/channel configuration.\nProtocol"
+    ID_VIEW_PAGERID         "View the inventory/Id configuration.\nInventory"
+    ID_VIEW_MESSAGES        "View the message processing configuration.\nMessage Processing"
+    ID_VIEW_ALERTS          "View the alert and display configuration.\nAlerts"
+    ID_VIEW_OPTIONS         "View miscellaneous configuration options.\nOptions"
+    ID_UTILITY_OVERLAY      "Overlay current configuration with patch file contents."
+    ID_TXTUNE_TXON_TEST     "Activate continuous transmission of dummy ACK packet.\nTx-On Test"
+    ID_VIEW_BANNER          "View the Logo.\nLogo"
+    ID_VIEW_HEXEDIT         "View the entire document as binary data.\nHexEdit"
+    ID_VIEW_PCLINK          "Optional companion PC serial link configuration.\nPC Link"
+    ID_VIEW_REGISTRATION    "View the Reflex50 registration configuration.\nRegistration"
+    ID_VIEW_CANNEDMSGS      "View the canned message configuration.\nCanned Messages"
+    ID_FILE_SAVEAS_DEFAULT  "Save the current configuration as the default."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    ID_RXTUNE_RCVRON_TEST   "Activate continuous reception of test pages.\nRx-On Test"
+    ID_COMDRV_CNRECEIVE     "Notify the application upon placement of data in the receive queue."
+    ID_COMDRV_CNEVENT       "Notify the application of COM events by serial port interrupts."
+    ID_COMDRV_CNPOLL        "Notify the application of COM events by polling the serial port."
+    ID_VIEW_COMMVIEW        "View data as sent and received from the application.\nCommView"
+    ID_TXTUNE_SYMBOL_DEV    "Tune the transmission of carrier frequency with symbol deviation.\nSymbol Deviation"
+    ID_DEVICE_TUNING        "Tune the device.\nDevice Tuning"
+    ID_VIEW_PREVIOUS        "Switch to the previous view."
+END
+
+STRINGTABLE DISCARDABLE 
+BEGIN
+    IDS_CHPMDA_RESETMDA     "\nMDA : Failed to reset device.\n"
+    IDS_CHPMDA_RANGE        "\nMDA : Function called using out-of-range parameter.\n"
+    IDS_CHPMDA_CONFMEAS     "\nMDA : Failed to configure device for measurement.\n"
+    IDS_CHPMDA_READMEAS     "\nMDA : Failed to read measurement from device.\n"
+    IDS_CHPMDA_BADMEAS      "\nMDA : Measurements are beyond expected tuning range.  Press F1 for Help.\n"
+    IDS_GENERAL_HELP        "\nPress F1 for help.\n"
+    IDS_CHPMDA_CONFDISPLAY  "\nMDA : Failed to configure the device display mode.\n"
+END
+
+
+#ifndef APSTUDIO_INVOKED
+////////////////////////////////////////////////////////////////////////////////
+//
+// Generated from the TEXTINCLUDE 3 resource.
+//
+#include "res\pps.rc2"  // non-App Studio edited resources
+
+#include "afxres.rc"  	// Standard components
+#include "afxprint.rc"	// printing/print preview resources
+
+/////////////////////////////////////////////////////////////////////////////////////
+#endif    // not APSTUDIO_INVOKED
+

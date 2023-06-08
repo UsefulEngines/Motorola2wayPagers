@@ -1,0 +1,103 @@
+// MAKEHELP.BAT generated Help Map file.  Used by PPS.HPJ. 
+ 
+// Commands (ID_* and IDM_*) 
+HID_TUNINGDLG_HELP                      0x113A3
+HID_PAGER_READ                          0x18003
+HID_PAGER_WRITE                         0x18004
+HID_PAGER_PASSWD                        0x18005
+HID_PAGER_COMMO                         0x18006
+HID_PAGER_PORT_COM1                     0x18008
+HID_PAGER_PORT_COM2                     0x18009
+HID_PAGER_PORT_COM3                     0x1800A
+HID_PAGER_PORT_COM4                     0x1800B
+HID_PAGER_TX_TUNING                     0x18012
+HID_TXTUNE_SCF                          0x18013
+HID_TXTUNE_MODBAL_LOW                   0x18014
+HID_TXTUNE_MODBAL_HIGH                  0x18015
+HID_RXTUNE_REFOSC                       0x18018
+HID_PAGER_SW_RESET                      0x1801C
+HID_PAGER_HW_RESET                      0x1801D
+HID_VIEW_SECURITY                       0x1801F
+HID_VIEW_ADDRESSES                      0x18020
+HID_VIEW_PROTOCOL                       0x18021
+HID_VIEW_PAGERID                        0x18022
+HID_VIEW_MESSAGES                       0x18023
+HID_VIEW_ALERTS                         0x18024
+HID_VIEW_OPTIONS                        0x18025
+HID_UTILITY_OVERLAY                     0x18026
+HID_TXTUNE_TXON_TEST                    0x18028
+HID_VIEW_BANNER                         0x18029
+HID_VIEW_HEXEDIT                        0x1802A
+HID_VIEW_PCLINK                         0x1802B
+HID_VIEW_REGISTRATION                   0x1802C
+HID_VIEW_CANNEDMSGS                     0x1802E
+HID_FILE_SAVEAS_DEFAULT                 0x1802F
+HID_RXTUNE_RCVRON_TEST                  0x18033
+HID_COMDRV_CNRECEIVE                    0x18036
+HID_COMDRV_CNEVENT                      0x18037
+HID_COMDRV_CNPOLL                       0x18038
+HID_VIEW_COMMVIEW                       0x18039
+HID_TXTUNE_SYMBOL_DEV                   0x1803C
+HID_DEVICE_TUNING                       0x1803D
+HID_TOGGLE_RESETS                       0x1803E
+HID_VIEW_PREVIOUS                       0x1803F
+HID_VIEW_NEXT                           0x18040
+HID_VIEW_PROTOCOL50                     0x18041
+HID_UTILITY_ALLDEFAULT                  0x18042
+HID_SETALL_DEFAULT                      0x18043
+HID_UTILITY_SETALLARCHIVE               0x18044
+HID_UTILITY_DELTA_ON                    0x18045
+HID_UTILITY_DELTA_OFF                   0x18046
+HID_UTILITY_DELTA_PLAY                  0x18047
+HID_UTILITY_DELTA_ERASE                 0x18048
+HID_UTILITY_MACRO                       0x18049
+HID_DEVICE_COMSETTINGS                  0x1804A
+HID_VIEW_PROTO25                        0x1804B
+HID_UTILITY_DELTA_REPEAT                0x1804C
+HID_UTILITY_DELTA_ONOFF                 0x1804D
+HID_ESNVALWARN                          0x1804E
+HID_ESNVALFIX                           0x1804F
+HID_INDICATOR_PORT                      0x1EF14
+HID_INDICATOR_IOOP                      0x1EF16
+HID_INDICATOR_PROGRESS                  0x1EF17
+ 
+// Prompts (IDP_*) 
+HIDP_UNSOLICITED_DATA                   0x3012E
+HIDP_SERIAL_PORT_ERROR                  0x3012F
+HIDP_SETALLDEFAULTS                     0x30130
+HIDP_CPFIELDACCESS_ERROR                0x30131
+HIDP_MDA_GPIB_ERROR                     0x30132
+HIDP_ESNVALWARN                         0x3804E
+HIDP_ESNVALFIX                          0x3804F
+ 
+// Resources (IDR_*) 
+HIDR_MAINFRAME                          0x20002
+HIDR_TUNING_TOOLS                       0x20003
+ 
+// Dialogs (IDD_*) 
+HIDD_ABOUTBOX                           0x20064
+HIDD_PPS_FORM                           0x20065
+HIDD_HEXEDITDLG                         0x2006E
+HIDD_PAGERID_FORM                       0x2006F
+HIDD_ADDRESSINFO_FORM                   0x20070
+HIDD_SUBADDR_DLG                        0x20071
+HIDD_SECURITY_FORM                      0x20072
+HIDD_PROTOCOL_FORM                      0x20073
+HIDD_MESSAGES_FORM                      0x20085
+HIDD_BOILERPLATE_FORM                   0x20088
+HIDD_PASSWORD_DLG                       0x20096
+HIDD_ALERTS_FORM                        0x20098
+HIDD_OPTIONS_FORM                       0x20099
+HIDD_PROTOCOL50_FORM                    0x2009B
+HIDD_PCLINK_FORM                        0x2009C
+HIDD_R50REG_FORM                        0x2009D
+HIDD_CANNEDMSGS_FORM                    0x2009E
+HIDD_PROG_ALERT_DLG                     0x2009F
+HIDD_COMMVIEW_FORM                      0x200A0
+HIDD_THETUNING_DLG                      0x200A1
+HIDD_COMSETTINGS                        0x200A5
+HIDD_OPTIONS_R25_FORM                   0x200A6
+HIDD_R25ADDRESS_FORM                    0x200A7
+HIDD_PROTO25_FORM                       0x200A8
+ 
+// Frame Controls (IDW_*) 

@@ -1,0 +1,138 @@
+[OPTIONS]
+CONTENTS=main_index
+TITLE=PPS Application Help
+COMPRESS=TRUE
+WARNING=2
+
+[FILES]
+hlp\afxcore.rtf 
+hlp\afxprint.rtf
+hlp\refosc.rtf
+hlp\scftune.rtf
+hlp\modballo.rtf
+hlp\modbalhi.rtf
+hlp\symdev.rtf
+hlp\txontest.rtf
+hlp\rxontest.rtf
+hlp\address.rtf
+hlp\addr25_1.rtf
+hlp\alerts.rtf
+hlp\canmsgs.rtf
+hlp\inventor.rtf
+hlp\logo.rtf
+hlp\msgproc.rtf
+hlp\options.rtf
+hlp\opts25_1.rtf
+hlp\pclink.rtf
+hlp\protocol.rtf
+hlp\proto25.rtf
+hlp\prot25_1.rtf
+hlp\proto50.rtf
+hlp\regis50.rtf
+hlp\security.rtf
+
+
+[BITMAPS]
+; toolbar buttons for File commands
+hlp\fileopen.bmp
+hlp\fileprnt.bmp
+hlp\filesave.bmp
+
+; toolbar buttons for Device commands
+hlp\read.bmp
+hlp\write.bmp
+
+; toolbar buttons for View commands
+hlp\logo.bmp
+hlp\upclabel.bmp
+hlp\lock.bmp
+hlp\mailbox.bmp
+hlp\twoway.bmp
+hlp\okcheck.bmp
+hlp\msgread.bmp
+hlp\messages.bmp
+hlp\alerts.bmp
+hlp\options.bmp
+hlp\pclink.bmp
+
+; toolbar buttons for tuning commands
+hlp\rosctune.bmp
+hlp\scftune.bmp
+hlp\balmodlo.bmp
+hlp\balmodhi.bmp
+hlp\innerdev.bmp
+hlp\txontest.bmp
+hlp\rxontest.bmp
+hlp\tuning.bmp
+
+; toolbar buttons for Record commands
+hlp\recfirst.bmp
+hlp\recprev.bmp
+hlp\recnext.bmp
+hlp\reclast.bmp
+
+; cursors
+hlp\curarw4.bmp
+hlp\curarw2.bmp
+hlp\curhelp.bmp
+
+; system command icons
+hlp\scmenu.bmp
+hlp\scmax.bmp
+hlp\scmin.bmp
+
+; miscellaneous
+hlp\bullet.bmp
+hlp\appexit.bmp
+hlp\hlpsbar.bmp
+hlp\hlptbar.bmp
+hlp\tunetbar.bmp
+
+
+
+[ALIAS]
+HIDR_MAINFRAME = main_index
+HIDD_ABOUTBOX = HID_APP_ABOUT
+HID_HT_SIZE = HID_SC_SIZE
+HID_HT_HSCROLL = scrollbars
+HID_HT_VSCROLL = scrollbars
+HID_HT_MINBUTTON = HID_SC_MINIMIZE
+HID_HT_MAXBUTTON = HID_SC_MAXIMIZE
+AFX_HIDP_INVALID_FILENAME         = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_OPEN_DOC       = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_SAVE_DOC       = AFX_HIDP_default
+AFX_HIDP_ASK_TO_SAVE              = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_CREATE_DOC     = AFX_HIDP_default
+AFX_HIDP_FILE_TOO_LARGE           = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_START_PRINT    = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_LAUNCH_HELP    = AFX_HIDP_default
+AFX_HIDP_INTERNAL_FAILURE         = AFX_HIDP_default
+AFX_HIDP_COMMAND_FAILURE          = AFX_HIDP_default
+AFX_HIDP_PARSE_INT                = AFX_HIDP_default
+AFX_HIDP_PARSE_REAL               = AFX_HIDP_default
+AFX_HIDP_PARSE_INT_RANGE          = AFX_HIDP_default
+AFX_HIDP_PARSE_REAL_RANGE         = AFX_HIDP_default
+AFX_HIDP_PARSE_STRING_SIZE        = AFX_HIDP_default
+AFX_HIDP_FAILED_INVALID_FORMAT    = AFX_HIDP_default
+AFX_HIDP_FAILED_INVALID_PATH      = AFX_HIDP_default
+AFX_HIDP_FAILED_DISK_FULL         = AFX_HIDP_default
+AFX_HIDP_FAILED_ACCESS_READ       = AFX_HIDP_default
+AFX_HIDP_FAILED_ACCESS_WRITE      = AFX_HIDP_default
+AFX_HIDP_FAILED_IO_ERROR_READ     = AFX_HIDP_default
+AFX_HIDP_FAILED_IO_ERROR_WRITE    = AFX_HIDP_default
+AFX_HIDP_STATIC_OBJECT            = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_CONNECT        = AFX_HIDP_default
+AFX_HIDP_SERVER_BUSY              = AFX_HIDP_default
+AFX_HIDP_BAD_VERB                 = AFX_HIDP_default
+AFX_HIDP_FAILED_MEMORY_ALLOC      = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_NOTIFY         = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_LAUNCH         = AFX_HIDP_default
+AFX_HIDP_ASK_TO_UPDATE            = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_UPDATE         = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_REGISTER       = AFX_HIDP_default
+AFX_HIDP_FAILED_TO_AUTO_REGISTER  = AFX_HIDP_default 
+
+
+[MAP]
+#include <c:\msvc\mfc\include\afxhelp.hm>
+#include <hlp\pps.hm>

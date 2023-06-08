@@ -1,0 +1,76 @@
+//
+// PPS.RC2 - resources App Studio does not edit directly
+//
+
+#ifdef APSTUDIO_INVOKED
+	#error this file is not editable by App Studio
+#endif //APSTUDIO_INVOKED
+
+
+// The following alerts are the only ones implemented
+// on the Pegasus/Centaur product family.  
+//
+IDSOUND_OFF		  sound		  res\sndoff.wav
+IDSOUND_345HZ     sound       res\snd345.wav
+IDSOUND_480HZ     sound       res\snd480.wav
+IDSOUND_686HZ     sound       res\snd686.wav
+IDSOUND_800HZ     sound       res\snd800.wav
+IDSOUND_900HZ     sound       res\snd900.wav
+IDSOUND_960HZ     sound       res\snd960.wav
+IDSOUND_1125HZ    sound       res\snd1125.wav
+IDSOUND_1200HZ     sound       res\snd1200.wav
+IDSOUND_1300HZ     sound       res\snd1300.wav
+IDSOUND_1371HZ     sound       res\snd1371.wav
+IDSOUND_1551HZ     sound       res\snd1551.wav
+IDSOUND_1600HZ     sound       res\snd1600.wav
+
+
+
+
+
+
+/////////////////////////////////////////////////////////////////////////////
+// Version stamp for this .EXE
+
+#include "ver.h"
+
+VS_VERSION_INFO     VERSIONINFO
+  FILEVERSION       1,0,0,1
+  PRODUCTVERSION    1,0,0,1
+  FILEFLAGSMASK     VS_FFI_FILEFLAGSMASK
+#ifdef _DEBUG
+  FILEFLAGS         VS_FF_DEBUG|VS_FF_PRIVATEBUILD|VS_FF_PRERELEASE
+#else
+  FILEFLAGS         0 // final version
+#endif
+  FILEOS            VOS_DOS_WINDOWS16
+  FILETYPE          VFT_APP
+  FILESUBTYPE       0   // not used
+BEGIN
+	BLOCK "StringFileInfo"
+	BEGIN
+		BLOCK "040904E4" // Lang=US English, CharSet=Windows Multilingual
+		BEGIN 
+			VALUE "CompanyName",     "Motorola AMG\0"
+			VALUE "FileDescription", "PPS MFC Application\0"
+			VALUE "FileVersion",     "1.0.001\0"
+			VALUE "InternalName",    "PPS\0"
+			VALUE "LegalCopyright",  "\0"
+			VALUE "LegalTrademarks", "\0"
+			VALUE "OriginalFilename","PPS.EXE\0"
+			VALUE "ProductName",     "PPS\0"
+			VALUE "ProductVersion",  "1.0.001\0"
+		END
+	END
+	BLOCK "VarFileInfo" 
+	BEGIN 
+		VALUE "Translation", 0x409, 1252
+			// English language (0x409) and the Windows ANSI codepage (1252)
+	END
+END
+
+/////////////////////////////////////////////////////////////////////////////
+// Add additional manually edited resources here...
+
+/////////////////////////////////////////////////////////////////////////////
+
